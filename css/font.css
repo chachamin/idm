@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+/* GmarketSans */
+@font-face{
+	font-family: "GmarketSans";
+	font-style: normal;
+	font-weight: 300;
+	src: url(font/GmarketSansLight.woff2) format("woff2"),
+    url(font/GmarketSansLight.woff) format('woff');
+}
+@font-face{
+	font-family: "GmarketSans";
+	font-style: normal;
+	font-weight: 500;
+	src: url(font/GmarketSansMedium.woff2) format("woff2"),
+    url(font/GmarketSansMedium.woff) format('woff');
+}
+@font-face{
+	font-family: "GmarketSans";
+	font-style: normal;
+	font-weight: 700;
+	src: url(font/GmarketSansBold.woff2) format("woff2"),
+    url(font/GmarketSansBold.woff) format('woff');
+}
+
+/* SCoreDream */
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 400; 
+    font-style: normal; 
+    src: url(font/SCDreamRegular.woff2) format('woff2'),
+         url(font/SCDreamRegular.woff) format('woff');
+}
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 500; 
+    font-style: normal; 
+    src: url(font/SCDreamMedium.woff2) format('woff2'),
+         url(font/SCDreamMedium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 600; 
+    font-style: normal; 
+    src: url(font/SCDreamBold.woff2) format('woff2'),
+         url(font/SCDreamBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 700; 
+    font-style: normal; 
+    src: url(font/SCDreamExtraBold.woff2) format('woff2'),
+         url(font/SCDreamExtraBold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 800; 
+    font-style: normal; 
+    src: url(font/SCDreamHeavy.woff2) format('woff2'),
+         url(font/SCDreamHeavy.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'SCoreDream';
+    font-weight: 900; 
+    font-style: normal; 
+    src: url(font/SCDreamBold.woff2) format('woff2'),
+         url(font/SCDreamBold.woff) format('woff');
+}
+
+/*EBShunminSB*/
+@font-face {
+    font-family: 'EBShunminSB';
+    font-weight: 400; 
+    font-style: normal; 
+    src: url(font/EBShunminSB.woff2) format('woff2'),
+         url(font/EBShunminSB.woff) format('woff');
+}
+
+/*JalnanGothic*/
+@font-face {
+    font-family: 'JalnanGothic';
+    font-weight: 400; 
+    font-style: normal; 
+    src: url(font/JalnanGothic.woff2) format('woff2'),
+         url(font/JalnanGothic.woff) format('woff');
+}

@@ -90,18 +90,20 @@ input::placeholder,
 .ellipsis{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
 .ellipsis2{overflow: hidden;text-overflow: ellipsis;word-wrap: break-word;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;white-space:nowrap;line-height: 1.2em;	height: 2.4em;}
 
-/* font - 에스코어 드림 */
-.typo{font-family:"SCoreDream", "sans-serif";}
+/* font */
+.typo_g{font-family:"GmarketSans", "sans-serif";}
+.typo_e{font-family:"EBShunminSB", "sans-serif";}
+.typo_j{font-family:"JalnanGothic", "sans-serif";}
 
 /* 정렬 */
 .p_r{position:relative}
 .p_a{position:absolute}
-.t_a_c{text-align:center }
+.t_a_c{text-align:center}
 .t_a_l{text-align:left }
 .t_a_r{text-align:right}
 
 .fr{float:right}
-.fl{float:left }
+.fl{float:left}
 .fn{float:none !important;}
 
 .v_a_t {vertical-align:top }
@@ -252,8 +254,9 @@ ul.ulfl > li{float:left}
 .blue{color:#2259D5 !important;}
 .orange{color:#EE5B00 !important}
 .red{color:#D23834 !important}
-.bk{color:#111 !important} 
-.gray{color:#666 !important} 
+.red_d {color:#c73533 !important}
+.bk{color:#111 !important}
+.gray{color:#666 !important}
 
 /* 배경 */
 .bg_bk{background-color:#333 !important; color:#fff !important}
