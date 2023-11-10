@@ -14,17 +14,16 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
-
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/slick.js"></script>
-
+    
     <title>임동 디지털 창작소 홈페이지</title>
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/board.css">
     <link rel="stylesheet" type="text/css" href="css/content.css">
-
+    
     <link rel="stylesheet" type="text/css" href="css/rspnsv.css">
 </head>
 
@@ -210,12 +209,12 @@
                                 </li>
                                 <li class="snb_lev1">
                                     <a class="snb_select" href="javascript:void(0);">
-                                        <p>공지사항</p> <span></span>
+                                        <p>센터소개</p> <span></span>
                                     </a>
                                     <ul class="snb_lev2">
-                                        <li><a href="#none">센터소개</a></li>
+                                        <li class="on"><a href="#none">센터소개</a></li>
                                         <li><a href="#none">찾아오시는길</a></li>
-                                        <li class="on"><a href="#none">공지사항</a></li>
+                                        <li><a href="#none">공지사항</a></li>
                                         <li><a href="#none">커뮤니티</a></li>
                                         <li><a href="">Q&A</a></li>
                                     </ul>
@@ -223,92 +222,124 @@
                             </ul>
                         </div>
                         <div class="snb_unit fr">
-                            <a title="페이지 인쇄" href="#this" onclick="window.print();return false;"
-                                class="print">PRINT</a>
+                            <a title="페이지 인쇄" href="#this" onclick="window.print();return false;" class="print">PRINT</a>
                         </div>
                     </div>
                 </div>
                 <div id="subWrap">
                     <div class="sub_h2">
-                        <h3 class="fb3">공지사항</h3>
+                        <h3 class="fb3">찾아오시는 길</h3>
                     </div>
                     <div class="sub_content inner">
-                        <div class="bo_list_wp">
-                            <div class="board_search clearfix">
-                                <div class="total fl">전체 <span class="mint fb3">99</span> 개의 게시물이 있습니다.</div>
-                                <div class="search_form fr">
-                                    <select name="keyField" id="select" title="검색구분 선택" class="">
-                                        <option value="" selected="selected">전체</option>
-                                        <option value="TITLE">제목</option>
-                                        <option value="CONTENT">내용</option>
-                                        <option value="M_NAME">작성자</option>
-                                    </select>
-                                    <div class="search_input_wrap">
-                                        <input class="" type="text" placeholder="검색어를 입력하세요" title="검색할 내용을 입력하세요" name="keyWord" value="">
-                                        <button type="submit" class="btn_search">검색</button>
+                        <div class="direction">
+                            <div class="sec map_wrap p_r">
+                                <div class="map">
+                                    <!-- 1. 지도 노드 -->
+                                    <div id="daumRoughmapContainer1699491434128" class="root_daum_roughmap root_daum_roughmap_landing" style="width:100%;"></div>
+                                    <!--2. 설치 스크립트-->
+                                    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+                                    <!-- 3. 실행 스크립트 -->
+                                    <script charset="UTF-8">
+                                        new daum.roughmap.Lander({
+                                            "timestamp" : "1699491434128",
+                                            "key" : "2grer",
+                                            "mapHeight" : "520"
+                                        }).render();
+                                    </script>
+                                </div>
+                                <div class="map_info_box">
+                                    <div class="in_box">
+                                        <p class="sub_title2 red_d fb3">찾아오시는길</p>
+                                        <div class="heading_5 fb3">임동디지털창작소</div>
+                                        <ul class="tit_list">
+                                            <li>
+                                                <div class="body_1 fb3">주소 </div>
+                                                <div class="body_1 t_gray">
+                                                    광주광역시 북구 무등로 68-7 (우)61248
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="body_1 fb3">연락처</div>
+                                                <div class="body_1 t_gray">
+                                                    대표전화 :  062)710-4701
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="t_a_c">
+                                        <a class="btn btn_m bg_lred ico_box" href="https://kko.to/NAXzQ4R43E" title="클릭시 새창열림" target="_blank"><span>길찾기</span><span class="ico"><img src="/img/ico_blank_w.png" alt=""></span></a>
+                                        <a class="btn btn_m bg_w_bo ico_box" href="https://kko.to/heO8s9z4Oa" title="클릭시 새창열림" target="_blank"><span>지도 크게보기</span><span class="ico"><img src="/img/ico_blank_bk.png" alt=""></span></a>
                                     </div>
                                 </div>
                             </div>
-                            <div class="bo_list">
-                                <table class="bo_table">
-                                    <caption>임동디지털창작소 게시물 목록을 제공합니다.</caption>
+                            <div class="sec sec_leftbox_wrap">
+                                <div class="sec_leftbox">
+                                    <div class="tit_box">
+                                        <div class="heading_6 fb2">교통정보</div>
+                                    </div>
+                                    <div class="con_box">
+                                        <div class="con_tit subtitle_2">
+                                            <span class="sub_ico ico_bus">
+                                                <img src="/img/ico_bus.png" alt="">
+                                            </span>
+                                            <span>버스이용시(주변정류장)</span>
+                                        </div>
+                                        <div class="table_wrap">
+                                            <p class="scl_notice">테이블을 양옆으로 스크롤해주세요</p>
+                                            <div class="scl_x">
+                                                <table class="basic_tb t_a_c">
+                                                    <caption>임동디지털창작소 오시는 길, 버스이용시 정류장명, 방면, 버스번호를 안내하는 표</caption>
 
-                                    <thead>
-                                        <tr>
-                                            <th>번호</th>
-                                            <th>제목</th>
-                                            <th>작성자</th>
-                                            <th>등록일</th>
-                                            <th>파일</th>
-                                            <th>조회수</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="notice_tr">
-                                            <td class="num"><span class="bo_notice">공지</span></td>
-                                            <td class="subject"><a href="#none">공지사항제목</a></td>
-                                            <td class="writer">관리자</td>
-                                            <td class="date">2023-11-03</td>
-                                            <td class="file">
-                                                <img src="/img/bo_file.png" alt="첨부파일있음">
-                                            </td>
-                                            <td class="hit">361</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">2</td>
-                                            <td class="subject"><a href="#none">공지사항제목</a><span class="bo_new">NEW</span></td>
-                                            <td class="writer">관리자</td>
-                                            <td class="date">2023-11-03</td>
-                                            <td class="file">
-                                                <img src="/img/bo_file.png" alt="첨부파일있음">
-                                            </td>
-                                            <td class="hit">361</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="num">1</td>
-                                            <td class="subject"><a href="#none">공지사항제목</a></td>
-                                            <td class="writer">관리자</td>
-                                            <td class="date">2023-11-01</td>
-                                            <td class="file"></td>
-                                            <td class="hit">200</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <div class="btn_box t_a_r">
-                                <a href="#none" class="btn bg_dblue round_box">글쓰기</a>
-                            </div>
-                            <div class="pagination">
-                                <ul>
-                                    <li><a href="#none" class="ico first" title="처음페이지"></a></li>
-                                    <li><a href="#none" class="ico prev" title="이전페이지"></a></li>
-                                    <li><a href="javascript:void(0);" class="active">1</a></li>
-                                    <li><a href="javascript:void(0);">2</a></li>
-                                    <li><a href="javascript:void(0);">3</a></li>
-                                    <li><a href="javascript:void(0);">4</a></li>
-                                    <li><a href="#none" class="ico next" title="다음페이지"></a></li>
-                                    <li><a href="#none" class="ico last" title="마지막페이지"></a></li>
-                                </ul>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>정류장명</th>
+                                                            <th>버스방면</th>
+                                                            <th>버스번호</th>
+                                                        </tr>
+                                                    </thead>
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>광주기아챔피언스필드입구</td>
+                                                            <td>태봉새마을금고 방면</td>
+                                                            <td>금남58, 송정98, 228(화순전남대방면), 임곡89, 228(화순사평)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>광주기아챔피언스필드</td>
+                                                            <td>한국국토정보공사광주중부지사 방면</td>
+                                                            <td>매월16, 운림51, 일곡38, 첨단95, 용전84, 100(장성군)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>광주기아챔피언스필드</td>
+                                                            <td>임동한국아델리움1차 방면</td>
+                                                            <td>매월16, 운림51, 일곡38, 첨단95, 100(장성군)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>임동한국아델리움1차</td>
+                                                            <td>임동행정복지센터 방면</td>
+                                                            <td>운림51, 일곡38, 첨단95, 100(장성군)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>임동한국아델리움1차</td>
+                                                            <td>광주기아챔피언스필드 방면</td>
+                                                            <td>운림51, 일곡38, 첨단95, 100(장성군)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>태봉새마을금고</td>
+                                                            <td>무등야구장 방면</td>
+                                                            <td>금남58, 송정98, 228(화순사평), 228 (화순전남대병원), 임곡89</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>무등야구장</td>
+                                                            <td>제2광천교 방면</td>
+                                                            <td>송정98, 일곡38, 228(화순사평), 228 (화순전남대병원), 임곡89</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

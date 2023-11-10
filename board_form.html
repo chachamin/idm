@@ -22,6 +22,8 @@
     <title>임동 디지털 창작소 홈페이지</title>
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/board.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
 
     <link rel="stylesheet" type="text/css" href="css/rspnsv.css">
 </head>
@@ -192,7 +194,7 @@
                         <div class="snb fl">
                             <ul class="ulfl">
                                 <li class="home"><a href="/culture">
-                                        <p>홈</p> <span></span>
+                                        <p>홈</p>
                                     </a>
                                 </li>
                                 <li class="snb_lev1">
@@ -227,62 +229,60 @@
                     </div>
                 </div>
                 <div id="subWrap">
-                    <div class="sub_h2">공지사항</div>
+                    <div class="sub_h2">
+                        <h3 class="fb3">공지사항</h3>
+                    </div>
                     <div class="sub_content inner">
                         <div class="bo_write_wrap">
                             <div class="write_notice_basic t_a_r">
                                 <span class="required">필수</span> 표시 항목은 필수 입력 항목입니다.
                             </div>
-                            <div class="bo_list">
-                                <table class="bo_table">
-                                    <caption>임동디지털창작소 게시물 목록을 제공합니다.</caption>
-
-                                    <thead>
-                                        <tr>
-                                            <th>번호</th>
-                                            <th>제목</th>
-                                            <th>작성자</th>
-                                            <th>파일</th>
-                                            <th>등록일</th>
-                                            <th>조회수</th>
-                                        </tr>
-                                    </thead>
+                            <div class="bo_write">
+                                <table class="basic_tb bo_w_table">
+                                    <caption>게시판 작성 테이블</caption>
                                     <tbody>
-                                        <tr class="notice">
-                                            <td class="num"><span class="bo_notice">공지</span></td>
-                                            <td class="subject">공지사항제목</td>
-                                            <td class="writer">관리자</td>
-                                            <td class="file">
-                                                <img src="/culture/img/bo_file.png" alt="첨부파일있음">
-                                            </td>
-                                            <td class="date">2023-11-03</td>
-                                            <td class="hit">361</td>
-                                        </tr>
-                                        <tr class="notice">
-                                            <td class="num">1</td>
-                                            <td class="subject">공지사항제목</td>
-                                            <td class="writer">관리자</td>
-                                            <td class="file"></td>
-                                            <td class="date">2023-11-01</td>
-                                            <td class="hit">200</td>
-                                        </tr>
+                                    <tr>
+                                        <th>작성자<span class="required"></span></th>
+                                        <td>관리자</td>
+                                    </tr>
+                                    <tr>
+                                        <th>제목<span class="required">필수</span></th>
+                                        <td>
+                                            <input type="text" name="title" id="title" class="w100p" value="" title="제목을 입력하세요." placeholder="제목을 입력하세요.">
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>공지사항</th>
+                                        <td>
+                                            <input type="radio" name="priority_yn" value="N" checked="checked" id="priority1" /> <label for="priority1">미사용</label>
+                                            <input type="radio" name="priority_yn" value="Y" id="priority2"  /> <label for="priority2">사용</label>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>내용</th>
+                                        <td class="centent_td">
+                                            <textarea name="content" id="content2" cols="50" rows="50" style="width:100%;height:300px;" title="내용을 입력하세요"></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>첨부</th>
+                                        <td>
+                                            <p class="mB5"><input type="file" title="파일등록" name="filename0" id="filename0" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,hwpx');" /></p>
+                                            <p class="mB5"><input type="file" title="파일등록" name="filename1" id="filename1" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,hwpx');" /></p>
+                                            <p class="mB5"><input type="file" title="파일등록" name="filename2" id="filename2" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,hwpx');" /></p>
+                                            <p class="mB5"><input type="file" title="파일등록" name="filename3" id="filename3" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,hwpx');" /></p>
+                                            <p class="mB5"><input type="file" title="파일등록" name="filename4" id="filename4" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,hwpx');" /></p>
+                                            <p class="caution">* jpg,gif,hwp,xls,hwpx 파일만 가능합니다. 용량제한 50MB</p>
+                                        </td>  
+                                    </tr>      
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="btn_box t_a_r">
-                                <a href="#none" class="btn bg_mint round_box">글쓰기</a>
-                            </div>
-                            <div class="pagination">
-                                <ul>
-                                    <li><a href="#none" class="ico first" title="처음페이지"></a></li>
-                                    <li><a href="#none" class="ico prev" title="이전페이지"></a></li>
-                                    <li><a href="javascript:void(0);" class="active">1</a></li>
-                                    <li><a href="javascript:void(0);">2</a></li>
-                                    <li><a href="javascript:void(0);">3</a></li>
-                                    <li><a href="javascript:void(0);">4</a></li>
-                                    <li><a href="#none" class="ico next" title="다음페이지"></a></li>
-                                    <li><a href="#none" class="ico last" title="마지막페이지"></a></li>
-                                </ul>
+                            <div class="btn_box t_a_c">
+                                <a href="#none" class="btn bg_dblue round_box">등록</a>
+                                <a href="#none" class="btn bg_w_bo round_box">목록</a>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,115 @@
+@charset "UTF-8";
+
+/* 서브 턴텐츠 기본 스타일 */
+.hr_b{padding-bottom:32px;margin-bottom:32px;border-bottom:1px dashed #ddd}
+.hr_t{padding-top:32px;margin-top:32px;border-top:1px dashed #ddd}
+#subcontent h3, #subcontent h4, #subcontent h5, #subcontent h6 {font-weight:700;color:#242424;}
+.bk1{color:#121212;}
+.bk2{color:#363636;}
+.bk3{color:#545454;}
+.bk4{color:#767676;}
+
+.sub_content {padding: 60px 0;min-height: 500px;color: #363636;}
+.sub_content .heading_5,
+.sub_content .heading_6{padding-bottom:24px;}
+.sub_content .subtitle_1{padding-bottom:12px;}
+.sub_content .subtitle_2 {padding-bottom:8px;}
+.sub_content .sec + .sec{margin-top:80px;}
+.sub_content .p_wp > p + p{padding-top:24px;}
+.sub_content .top_gray_wp{padding:60px;background:#fafafa;border-radius:8px;overflow:hidden;}
+.sub_content .box_gray{padding:32px;background:#fafafa;border-radius:8px;overflow:hidden;}
+
+/* 리스트 */
+.ul_list {text-align:left;line-height:1.5rem;}
+.ul_list > li{position:relative;padding-left:12px;margin:10px 4px;}
+.ul_list > li:first-child{margin-top:0;}
+.ul_list > li:after{content:'';position:absolute;left:0;top:10px;width:4px;height:4px;background:#999;border-radius:50%}
+.ul_list > li .tit{font-weight:600;margin-right:8px;}
+.ul_list.list_st2 > li:after{background:#2254e0}
+.ul_list.list_st3 > li:after{background:#121212}
+
+.ul_list2 {text-align:left;line-height:1.5rem;font-size:0.875rem;}
+.ul_list2 > li{position:relative;padding-left:10px;margin:4px 4px;}
+.ul_list2 > li:first-child{margin-top:0;}
+.ul_list2 > li:after{content:'';position:absolute;left:0;top:11px;width:3px;height:3px;background:#bbb;border-radius:50%}
+.ul_list2 > li .tit{font-weight:600;margin-right:8px;}
+.ul_list2.list2_st2 > li:after{border-radius:0;height:1px;width:6px;}
+
+/* 테이블 */
+.table_wrap{margin-top:8px;line-height:1.5rem;}
+.table_wrap .notice{display:none}
+.basic_tb {border-top:2px solid #000;margin:0px 0 14px;font-size:0.938rem;}
+.basic_tb  thead th{padding:12px;border-top:2px solid #333;border:1px solid #e1e1e1;text-align:center;font-weight:600;background:#efeff1;}
+.basic_tb  tbody th{background:#f6f6f7;font-weight:500;text-align:center;font-weight:600;}
+.basic_tb  tbody td,.basic_tb  tbody th{padding:12px;border:1px solid #e1e1e1;}
+.basic_tb td:first-child,.basic_tb th:first-child{border-left:0 !important;}
+.basic_tb td:last-child,.basic_tb th:last-child{border-right:0 !important;}
+
+.basic_tb2 {margin:0px 0 14px;font-size:0.938rem;}
+.basic_tb2  thead th{padding:8px;border-top:2px solid #333;border:1px solid #e1e1e1;text-align:center;font-weight:600;background:#efeff1;}
+.basic_tb2  tbody th{background:#f6f6f7;font-weight:500;text-align:center;font-weight:600;}
+.basic_tb2  tbody td,.basic_tb  tbody th{padding:8px;border:1px solid #e1e1e1;}
+.basic_tb2 td:first-child,.basic_tb2 th:first-child{border-left:0 !important;}
+.basic_tb2 td:last-child,.basic_tb2 th:last-child{border-right:0 !important;}
+
+
+/* 폼 */
+.form_wrap .form_tit{margin-bottom:8px;display:block;color:#111;font-weight:600;}
+.forms + .forms{margin-top:16px;}
+.form_box.form_m input{height:56px;}
+.form_box textarea{width:100%;min-height:120px;overflow-y:scroll;}
+.form_box.gray_form{background:#f6f6f6;vertical-align:middle;padding:0 8px;border:1px solid #ededed;box-sizing:border-box;height:45px;line-height:45px;border-radius:4px;min-width:192px;}
+
+.flex_form{display:flex;align-items:center;flex-wrap:wrap;}
+.flex_form .form_wrap{display:flex;align-items:center;padding:4px;}
+.flex_form .form_tit{height:100%;margin-bottom:0;min-width:90px;padding:0 16px;}
+.flex_form .form_box{width:100%;}
+.flex_form .form_box input{width:100%;}
+
+.flex_form.from_gray .form_wrap{background:#f4f4f4;}
+.flex_form.from_gray .form_wrap:first-child{border-radius:4px 0 0 4px;}
+.flex_form.from_gray .form_wrap:last-child{border-radius:0 4px 4px 0;}
+.flex_form.from_gray .form_wrap:not(:first-child){border-left:1px solid #e1e1e1;}
+.flex_form.from_gray .form_box select,
+.flex_form.from_gray .form_box input{width:100%;border:0;background-color:#f4f4f4;}
+
+.flex_form.from_gray.no_wrap  .form_wrap:last-child{border-radius:4px}
+.flex_form.from_gray.no_wrap  .form_wrap:not(:first-child){border-left:0;}
+
+.flex_form.col_1 > *{width:100%;flex: 0 0 100%;}
+.flex_form.col_2 > *{width:calc(100%  /2);}
+.flex_form.col_3 > *{width:calc(100%  /3);}
+.flex_form.col_4 > *{width:calc(100%  /4);}
+.col_1 .form_wrap + .form_wrap{margin-top:4px}
+
+
+.infomation .ico_info_bk{width:18px;height:18px;background:url('/_KOR/img/ir_sub.png') -407px -17px no-repeat;}
+
+/* 컨텐츠 없음 */
+.no_html{display:flex;justify-content:center;align-items:center;padding:136px 32px;text-align:center;}
+.no_html .flex_wp .heading_5{padding:28px 0 16px;}
+
+/* 사이드 타이틀 컨텐츠 */
+.sec_leftbox{border-top:1px solid #acafb7;display:flex;padding:36px 0;}
+.sec_leftbox .tit_box{position:relative;width:calc((100% - 160px) / 6 );padding-right:16px;}
+.sec_leftbox .tit_box:before{content:'';position:absolute;top:-37px;left:0;width:100%;height:1px;background:#333;}
+.sec_leftbox .con_box{width:calc(100% - ((100% - 160px) / 6) );padding-left:32px;}
+.sec_leftbox .con_box .in_box{width:100%;}
+.sec_leftbox:last-child{border-bottom:1px solid #ddd;}
+
+.t_left_list > li{border-top:1px solid #ddd;display:flex;padding:24px 0;}
+.t_left_list > li > .tit{width:10%;font-weight:700;}
+.t_left_list > li > .con{width:90%;padding-left:16px;}
+.t_left_list > li:last-child{border-bottom:1px solid #ddd;}
+
+/* 모바일 스크롤 안내 */
+.table_wrap .scl_notice {padding: 10px;background: #fff8f7;color: #f44336;border-radius: 4px;margin-bottom: 4px;display: none;}
+
+/*찾아오시는 길*/
+.map_wrap .map {border-bottom: 1px solid #eee;}
+.map_wrap .map_info_box {position: absolute;top: 50%;margin-top: -200px;left: 2rem;padding: 16px;background: #fff;border-radius: 14px;z-index: 2;border: 1px solid #121212;}
+.map_wrap .map_info_box .in_box {padding: 24px 24px 48px;}
+.map_wrap .map_info_box .in_box .tit_list li + li {margin-top: 16px;}
+.map_info_box .btn {min-width: 168px;}
+.root_daum_roughmap .wrap_btn_zoom button {height: 30px;}
+.root_daum_roughmap .wrap_btn_zoom .btn_zoom_reset {margin-top: 10px !important;}

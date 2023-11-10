@@ -81,7 +81,8 @@
 .pg_tabs > li > a.tab_link{position:relative;display:block;padding:15px 30px;font-size:1.25rem;font-weight:500;text-align:center;border-radius:30px;}
 .pg_tabs > li > a.tab_link::before {content: '';display: block;width: 4px;height: 4px;border-radius: 50%;background: #d1d1d3;position: absolute;top: 23px;right: 0;}
 .pg_tabs > li:last-child a.tab_link::before {display: none;}
-.pg_tabs > li > a.tab_link.active {color:#fff;background:#5c9700;}
+.pg_tabs > li > a.tab_link.active {color:#fff;background:url(../img/main_tab_bg.jpg) no-repeat center / cover;}
+.pg_tabs > li > a.tab_link.active::after {content: '';display: block;width: 10px;height: 9px;background: url(../img/main_tab_bg_a.png) no-repeat center;position: absolute;bottom: -9px;left: 50%;transform: translateX(-50%);}
 .pg_tabs > li > a.tab_link.active::before {display: none;}
 .pg_tabs .tab_cont{display:none;width:100%;position:absolute;left:0px;top:105px;text-align:left;}
 .pg_tabs > li > a.more {display: none;}
@@ -92,10 +93,10 @@
 .pg_tabs .pg_sd .item{padding: 0 1rem;box-sizing: border-box;}
 .pg_tabs .pg_sd .item a {display: block;}
 .pg_tabs .pg_sd .item .thum_box {height: 268px;overflow: hidden;box-shadow: 0px 2px 13px 0px rgba(4, 0, 0, 0.15);border-radius: 20px 20px 0 20px;position: relative;}
-.pg_tabs .pg_sd .item .thum_box .hover_link {position: absolute;top: 0;left: 0;width: 100%;height: 0;background: rgba(255, 157, 104, .9);display: flex;align-items: center;justify-content: center;transition: all 0.3s ease;}
-.pg_tabs .pg_sd .item .thum_box .hover_mark {font-weight: 500;color: #fff;border: 2px solid #fff;padding: 7px 20px;border-radius: 20px;opacity: 0;transition: all 0.3s ease;}
+.pg_tabs .pg_sd .item .thum_box .hover_link {position: absolute;top: 0;left: 0;width: 100%;height: 0;background: rgba(255, 157, 104, .9);transition: all 0.3s ease;}
+.pg_tabs .pg_sd .item .thum_box .hover_mark {font-weight: 500;color: #fff;border: 2px solid #fff;padding: 7px 20px;border-radius: 20px;opacity: 0;transition: all 0.3s ease;position: absolute;top: 50%;left: 50%;transform: translate(-50% ,-50%);}
 .pg_tabs .pg_sd .item a:hover .hover_link {height: 100%;}
-.pg_tabs .pg_sd .item a:hover .hover_mark {opacity: 1;;}
+.pg_tabs .pg_sd .item a:hover .hover_mark {opacity: 1;}
 .pg_tabs .pg_sd .item .text_box {text-align: center;margin-top: 20px}
 .pg_tabs .pg_sd .item .text_box .tag span {padding: 0 5px;color: #c73533;position: relative;}
 .pg_tabs .pg_sd .item .text_box .tag span::after {content: '';display: block;width: 100%;height: 1px;background: #c73533;position: absolute;bottom: -1px;left: 0;}

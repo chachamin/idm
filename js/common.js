@@ -281,6 +281,13 @@ $(document).ready(function () {
         $(this).parent().siblings().children("ul").stop().slideUp();
     });
 
+    // -------------------------- snb --------------------------
+	$(".snb_select").click(function(){
+		$(this).toggleClass("on");
+		$(this).parent().children("ul").stop().slideToggle();
+		$(this).parent().siblings().children("ul").stop().slideUp();
+	});
+
 });
 
 // -------------------------- mGnb close --------------------------
