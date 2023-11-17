@@ -1,0 +1,84 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>회원 비밀번호 확인 | 임동디지털창작소</title>
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/default.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/common.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/layout.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/slick.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/main.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/content.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/board.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/rspnsv.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/skin/member/basic/style.css?ver=2303229">
+<!--[if lte IE 8]>
+<script src="http://121.147.125.239/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://121.147.125.239";
+var g5_bbs_url   = "http://121.147.125.239/bbs";
+var g5_is_member = "1";
+var g5_is_admin  = "super";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+var g5_theme_shop_url = "http://121.147.125.239/theme/basic/shop";
+var g5_shop_url = "http://121.147.125.239/shop";
+</script>
+<script src="http://121.147.125.239/js/jquery-1.12.4.min.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/jquery-migrate-1.4.1.min.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/jquery.menu.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/common.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/wrest.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/placeholders.min.js?ver=2304171"></script>
+<script src="http://121.147.125.239/theme/basic/js/common.js?ver=2304171"></script>
+<script src="http://121.147.125.239/theme/basic/js/slick.js?ver=2304171"></script>
+<script src="http://121.147.125.239/theme/basic/js/main.js?ver=2304171"></script>
+</head>
+<body>
+<div id="hd_login_msg">최고관리자 최고관리자님 로그인 중 <a href="http://121.147.125.239/bbs/logout.php">로그아웃</a></div>
+<!-- 회원 비밀번호 확인 시작 { -->
+<div id="mb_confirm" class="mbskin">
+    <h1>회원 비밀번호 확인</h1>
+
+    <p>
+        <strong>비밀번호를 한번 더 입력해주세요.</strong>
+                회원님의 정보를 안전하게 보호하기 위해 비밀번호를 한번 더 확인합니다.
+            </p>
+
+    <form name="fmemberconfirm" action="http://121.147.125.239/bbs/register_form.php" onsubmit="return fmemberconfirm_submit(this);" method="post">
+    <input type="hidden" name="mb_id" value="admin">
+    <input type="hidden" name="w" value="u">
+
+    <fieldset>
+        <span class="confirm_id">회원아이디</span>
+        <span id="mb_confirm_id">admin</span>
+        <label for="confirm_mb_password" class="sound_only">비밀번호<strong>필수</strong></label>
+        <input type="password" name="mb_password" id="confirm_mb_password" required class="required frm_input" size="15" maxLength="20" placeholder="비밀번호">
+        <input type="submit" value="확인" id="btn_submit" class="btn_submit">
+    </fieldset>
+
+    </form>
+
+</div>
+
+<script>
+function fmemberconfirm_submit(f)
+{
+    document.getElementById("btn_submit").disabled = true;
+
+    return true;
+}
+</script>
+<!-- } 회원 비밀번호 확인 끝 -->
+<!-- <div style='float:left; text-align:center;'>RUN TIME : 0.00061798095703125<br></div> -->
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="임동지지털창작소">
+    <meta name="keyword" content="디지털장작소">
+
+    <link rel="shortcut icon" href="/culture/img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/culture/img/favi.png">
+
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/slick.js"></script>
+    
+    <title>임동 디지털 창작소 홈페이지</title>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/content.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/rspnsv.css">
+</head>
+
+<body>
+
+    <div id="mb_login" class="mbskin">
+        <div class="mbskin_box">
+            <div class="logo_box">
+                <span class="idm_logo"></span>
+            </div>
+            <div class="login_form">
+                <form name="flogin" action="<?php echo $login_action_url ?>" onsubmit="return flogin_submit(this);" method="post">
+                    <input type="hidden" name="url" value="<?php echo $login_url ?>">
+                    <div class="fb1">회원 로그인</div>
+                    <div class="input_box input_id">
+                        <input type="text" name="mb_id" id="login_id" required class="frm_input required" size="20" maxLength="20" placeholder="아이디">
+                    </div>
+                    <div class="input_box">
+                        <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="비밀번호">
+                    </div>
+                    <button type="submit" class="btn_submit">로그인</button>
+                    <div class="link_box dp_flex">
+                        <div class="login_if_auto chk_box chkbox">
+                            <input type="checkbox" name="auto_login" id="login_auto_login" class="selec_chk">
+                            <label for="login_auto_login"><span></span> 자동로그인</label>
+                        </div>
+                        <a href="<?php echo G5_BBS_URL ?>/password_lost.php">아이디/비밀번호 찾기</a>
+                    </div>
+                    <div class="join_site">
+                        <span class="text_pr">Create An Account</span>
+                        <a href="<?php echo G5_BBS_URL ?>/register.php" class="join_btn bg_gray">회원가입</a>
+                    </div>
+                </form>
+            </div>
+            <div class="policy">
+                <div class="btn_box">
+                    <a href="#none" class="fb1">개인정보취급방침</a>
+                    <a href="#none">이메일무단수집거부</a>
+                </div>
+                <div class="copy">
+                    Copyright(C) 임동디지털창작소. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

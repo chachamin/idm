@@ -1,0 +1,606 @@
+
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>회원 정보 수정 | 임동디지털창작소</title>
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/default.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/common.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/layout.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/slick.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/main.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/content.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/board.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/rspnsv.css?ver=2303229">
+<link rel="stylesheet" href="http://121.147.125.239/skin/member/basic/style.css?ver=2303229">
+<!--[if lte IE 8]>
+<script src="http://121.147.125.239/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://121.147.125.239";
+var g5_bbs_url   = "http://121.147.125.239/bbs";
+var g5_is_member = "1";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+var g5_theme_shop_url = "http://121.147.125.239/theme/basic/shop";
+var g5_shop_url = "http://121.147.125.239/shop";
+</script>
+<script src="http://121.147.125.239/js/jquery-1.12.4.min.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/jquery-migrate-1.4.1.min.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/jquery.menu.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/common.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/wrest.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/placeholders.min.js?ver=2304171"></script>
+<script src="http://121.147.125.239/theme/basic/js/common.js?ver=2304171"></script>
+<script src="http://121.147.125.239/theme/basic/js/slick.js?ver=2304171"></script>
+<script src="http://121.147.125.239/theme/basic/js/main.js?ver=2304171"></script>
+<script src="http://121.147.125.239/js/jquery.register_form.js?ver=2304171"></script>
+</head>
+<body>
+<div id="hd_login_msg">테스트님 로그인 중 <a href="http://121.147.125.239/bbs/logout.php">로그아웃</a></div>
+<!-- 상단 시작 { -->
+<div id="skipNavi">
+	<a href="#container">본문 바로가기</a>
+	<a href="#gnb">주메뉴 바로가기</a>
+</div>
+
+<div id="wrapper">
+	<!-- header -->
+	<header id="header">
+		<!-- tnb -->
+		<div class="tnb">
+			<div class="inner clearfix">
+				<div class="tnb_l">
+					<ul class="ulfl">
+						<li>
+							<a href="#none">광주디자인진흥원</a>
+						</li>
+						<li>
+							<a href="#none">광주디자인진흥원</a>
+						</li>
+						<li>
+							<a href="#none">광주디자인진흥원</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--// tnb -->
+		<div class="logo_area inner">
+			<h1><a href="http://121.147.125.239" title="임동 디지털 창작소"></a></h1>
+		</div>
+
+		<!-- gnb -->
+		<div id="gnb">
+			<div class="inner clearfix">
+				<h2 id="gnbSpot" class="sound_only"> 사이트 주요메뉴</h2>
+				<ul class="gnb_dep1">
+										<li>
+						<a href="http://121.147.125.239/bbs/content.php?co_id=company" target="_self">임동디지털창작소</a>
+						<ul class="gnb_dep2"><li class="menu_title"><span>임동디지털창작소</span></li>
+							<li><a href="http://121.147.125.239/bbs/content.php?co_id=company" target="_self" class="gnb_2da">센터소개</a></li>
+													<li><a href="http://121.147.125.239/bbs/content.php?co_id=directions" target="_self" class="gnb_2da">찾아오시는길</a></li>
+													<li><a href="http://121.147.125.239/bbs/board.php?bo_table=notice" target="_self" class="gnb_2da">공지사항</a></li>
+													<li><a href="http://121.147.125.239/bbs/faq.php?pg_id=faq" target="_self" class="gnb_2da">Q&A</a></li>
+						</ul>
+					</li>
+										<li>
+						<a href="http://121.147.125.239/edu/edu_list.php?pg_id=edu" target="_self">프로그램 이용</a>
+						<ul class="gnb_dep2"><li class="menu_title"><span>프로그램 이용</span></li>
+							<li><a href="http://121.147.125.239/edu/edu_list.php?pg_id=edu" target="_self" class="gnb_2da">교육신청</a></li>
+													<li><a href="http://121.147.125.239/event/event_list.php?pg_id=event" target="_self" class="gnb_2da">행사신청</a></li>
+													<li><a href="http://121.147.125.239/bbs/board.php?bo_table=gallery" target="_self" class="gnb_2da">아카이브</a></li>
+						</ul>
+					</li>
+										<li>
+						<a href="http://121.147.125.239/bbs/content.php?co_id=facility" target="_self">시설이용</a>
+						<ul class="gnb_dep2"><li class="menu_title"><span>시설이용</span></li>
+							<li><a href="http://121.147.125.239/bbs/content.php?co_id=facility" target="_self" class="gnb_2da">시설및 장비안내</a></li>
+													<li><a href="http://121.147.125.239/reservation/space.php?pg_id=space" target="_self" class="gnb_2da">공간예약신청</a></li>
+													<li><a href="http://121.147.125.239/reservation/equipment.php?pg_id=eq" target="_self" class="gnb_2da">장비예약신청</a></li>
+						</ul>
+					</li>
+										<li>
+						<a href="http://121.147.125.239/bbs/board.php?bo_table=online" target="_self">자료실</a>
+						<ul class="gnb_dep2"><li class="menu_title"><span>자료실</span></li>
+							<li><a href="http://121.147.125.239/bbs/board.php?bo_table=online" target="_self" class="gnb_2da">온라인강의</a></li>
+													<li><a href="http://121.147.125.239/bbs/board.php?bo_table=reference" target="_self" class="gnb_2da">자료실</a></li>
+													<li><a href="http://121.147.125.239/bbs/board.php?bo_table=promotion" target="_self" class="gnb_2da">홍보게시판</a></li>
+						</ul>
+					</li>
+									</ul>
+				<div class="gnb_r">
+					<ul>
+						<li class="gnb_sitemap circle_shape">
+							<a class="btn btn_s ir_pm" href="none">사이트맵</a>
+						</li>
+												<li class="gnb_logout circle_shape">
+							<a href="http://121.147.125.239/bbs/logout.php" class="btn btn_s ir_pm">로그아웃</a>
+						</li>
+						<li class="gnb_mypg">
+							<a class="btn btn_s dp_flex" href="http://121.147.125.239/bbs/member_confirm.php?url=http://121.147.125.239/bbs/register_form.php">
+								<span class="ico">
+									<img src="/theme/basic/img/mypg_ico.png" alt="">
+								</span>
+								<span class="typo_g">마이페이지</span>
+							</a>
+						</li>
+						<!-- <li><a href="http://121.147.125.239/bbs/logout.php">로그아웃</a></li> -->
+						<!--  -->
+											</ul>
+				</div>
+			</div>
+			<div class="tmnBg"></div>
+		</div>
+		<!--// gnb -->
+
+		<!-- mobile -->
+		<a href="#none" id="mMenu" title="모바일 메뉴 열기">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div id="mGnb">
+			<div class="mgnb_top">
+				<div class="t_abox">
+					<a href="/">HOME</a>
+					<a href="#none">Sitemap</a>
+										<a href="http://121.147.125.239/bbs/logout.php">로그아웃</a>
+					<a href="http://121.147.125.239/bbs/member_confirm.php?url=http://121.147.125.239/bbs/register_form.php">마이페이지</a>
+									</div>
+				<div class="t_box">
+					<p>임동 디지털 창작소</p>
+					<p>홈페이지 방문을 환영합니다</p>
+				</div>
+			</div>
+			<!-- end : mGnb_top -->
+			<ul class="mDepth1">
+									<li>
+						<a href="http://121.147.125.239/bbs/content.php?co_id=company" target="_self">임동디지털창작소</a>
+						<ul class="mDepth2"><li class="menu_title"><span>임동디지털창작소</span></li>
+							<li><a href="http://121.147.125.239/bbs/content.php?co_id=company" target="_self" class="gnb_2da">센터소개</a></li>
+													<li><a href="http://121.147.125.239/bbs/content.php?co_id=directions" target="_self" class="gnb_2da">찾아오시는길</a></li>
+													<li><a href="http://121.147.125.239/bbs/board.php?bo_table=notice" target="_self" class="gnb_2da">공지사항</a></li>
+													<li><a href="http://121.147.125.239/bbs/faq.php?pg_id=faq" target="_self" class="gnb_2da">Q&A</a></li>
+						</ul>
+					</li>
+										<li>
+						<a href="http://121.147.125.239/edu/edu_list.php?pg_id=edu" target="_self">프로그램 이용</a>
+						<ul class="mDepth2"><li class="menu_title"><span>프로그램 이용</span></li>
+							<li><a href="http://121.147.125.239/edu/edu_list.php?pg_id=edu" target="_self" class="gnb_2da">교육신청</a></li>
+													<li><a href="http://121.147.125.239/event/event_list.php?pg_id=event" target="_self" class="gnb_2da">행사신청</a></li>
+													<li><a href="http://121.147.125.239/bbs/board.php?bo_table=gallery" target="_self" class="gnb_2da">아카이브</a></li>
+						</ul>
+					</li>
+										<li>
+						<a href="http://121.147.125.239/bbs/content.php?co_id=facility" target="_self">시설이용</a>
+						<ul class="mDepth2"><li class="menu_title"><span>시설이용</span></li>
+							<li><a href="http://121.147.125.239/bbs/content.php?co_id=facility" target="_self" class="gnb_2da">시설및 장비안내</a></li>
+													<li><a href="http://121.147.125.239/reservation/space.php?pg_id=space" target="_self" class="gnb_2da">공간예약신청</a></li>
+													<li><a href="http://121.147.125.239/reservation/equipment.php?pg_id=eq" target="_self" class="gnb_2da">장비예약신청</a></li>
+						</ul>
+					</li>
+										<li>
+						<a href="http://121.147.125.239/bbs/board.php?bo_table=online" target="_self">자료실</a>
+						<ul class="mDepth2"><li class="menu_title"><span>자료실</span></li>
+							<li><a href="http://121.147.125.239/bbs/board.php?bo_table=online" target="_self" class="gnb_2da">온라인강의</a></li>
+													<li><a href="http://121.147.125.239/bbs/board.php?bo_table=reference" target="_self" class="gnb_2da">자료실</a></li>
+													<li><a href="http://121.147.125.239/bbs/board.php?bo_table=promotion" target="_self" class="gnb_2da">홍보게시판</a></li>
+						</ul>
+					</li>
+								</ul>
+			<a href="javascript:mGnbClose();" class="mGnbClose"><span class="mn_close"></span>모바일 메뉴 닫기</a>
+		</div>
+		<div id="dimed"></div>
+		<!-- // mobile -->
+	</header>
+	<!--// header -->
+<!-- } 상단 끝 -->
+
+<!-- 콘텐츠 시작 { -->
+<div id="container">
+        			<div class="sub_container">
+                <div id="svisualLayout" class="p_r">
+                    <div class="titleWrap inner t_a_c">
+                        <p>주민 참여형 메이커 스페이스</p>
+						<!-- 대메뉴 따라 변경 -->
+                        <h2>기타</h2>
+						<!-- // -->
+                    </div>
+					<!-- 비주얼 대메뉴 기준 클래스 번호 변경 -->
+                    <div class="svisualBg svisualBg_01"></div>
+					<!-- // -->
+                </div>
+				<!-- 서브 네비 바 -->
+                <div id="snb">
+                    <div class="inner clearfix">
+                        <div class="snb fl">
+                            <ul class="ulfl">
+							<li class="home"><a href="/"><p>홈</p></a></li><li class="snb_lev1"><a class="snb_select" href="javascript:void(0);"><p>기타</p><span></span></a><ul class="snb_lev2"><li  class="on"><a href='http://121.147.125.239/bbs/content.php?co_id=company'>임동디지털창작소</a></li><li ><a href='http://121.147.125.239/edu/edu_list.php?pg_id=edu'>프로그램 이용</a></li><li ><a href='http://121.147.125.239/bbs/content.php?co_id=facility'>시설이용</a></li><li ><a href='http://121.147.125.239/bbs/board.php?bo_table=online'>자료실</a></li></ul></li><li class="snb_lev1"><a class="snb_select" href="javascript:void(0);"><p>임동디지털창작소</p><span></span></a><ul class="snb_lev2"><li ><a href='http://121.147.125.239/bbs/content.php?co_id=company'>센터소개</a></li><li ><a href='http://121.147.125.239/bbs/content.php?co_id=directions'>찾아오시는길</a></li><li ><a href='http://121.147.125.239/bbs/board.php?bo_table=notice'>공지사항</a></li><li ><a href='http://121.147.125.239/bbs/faq.php?pg_id=faq'>Q&A</a></li></ul></li>								
+                            </ul>
+                        </div>
+                        <div class="snb_unit fr">
+                            <a title="페이지 인쇄" href="#this" onclick="window.print();return false;"
+                                class="print">PRINT</a>
+                        </div>
+                    </div>
+                </div>
+				<!-- // 서브 네비 바 -->
+
+				<!-- 서브컨텐츠 시작 -->
+                <div id="subWrap">
+                    <div class="sub_h2">
+						<!-- 페이지 명 -->
+                        <h3 class="fb3">임동디지털창작소</h3>
+						<!-- // -->
+                    </div>
+									
+<!-- 회원정보 입력/수정 시작 { -->
+
+<div class="register">
+	<form id="fregisterform" name="fregisterform" action="http://121.147.125.239/bbs/register_form_update.php" onsubmit="return fregisterform_submit(this);" method="post" enctype="multipart/form-data" autocomplete="off">
+	<input type="hidden" name="w" value="u">
+	<input type="hidden" name="url" value="%2Fbbs%2Fregister_form.php">
+	<input type="hidden" name="agree" value="">
+	<input type="hidden" name="agree2" value="">
+	<input type="hidden" name="cert_type" value="">
+	<input type="hidden" name="cert_no" value="">
+	<input type="hidden" name="mb_sex" value="">		<input type="hidden" name="mb_nick_default" value="테스트">
+	<input type="hidden" name="mb_nick" value="테스트">
+		
+	<div id="register_form" class="form_01">   
+	    <div class="register_form_inner">
+	        <h2>사이트 이용정보 입력</h2>
+	        <ul>
+	            <li>
+	                <label for="reg_mb_id">
+	                    아이디 (필수)
+	                    <button type="button" class="tooltip_icon"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span class="sound_only">설명보기</span></button>
+	                    <span class="tooltip">영문자, 숫자, _ 만 입력 가능. 최소 3자이상 입력하세요.</span>
+	                </label>
+	                <input type="text" name="mb_id" value="wlauswlaus" id="reg_mb_id"  readonly class="frm_input full_input  readonly" minlength="3" maxlength="20" placeholder="아이디">
+	                <span id="msg_mb_id"></span>
+	            </li>
+	            <li class="half_input left_input margin_input">
+	                <label for="reg_mb_password">비밀번호 (필수)</label>
+	                <input type="password" name="mb_password" id="reg_mb_password"  class="frm_input full_input " minlength="3" maxlength="20" placeholder="비밀번호">
+	            </li>
+	            <li class="half_input left_input">
+	                <label for="reg_mb_password_re">비밀번호 확인 (필수)</label>
+	                <input type="password" name="mb_password_re" id="reg_mb_password_re"  class="frm_input full_input " minlength="3" maxlength="20" placeholder="비밀번호 확인">
+	            </li>
+	        </ul>
+	    </div>
+	
+	    <div class="tbl_frm01 tbl_wrap register_form_inner">
+	        <h2>개인정보 입력</h2>
+	        <ul>
+				<li>
+                    	                				</li>
+	            <li>
+	                <label for="reg_mb_name">이름 (필수)</label>
+	                <input type="text" id="reg_mb_name" name="mb_name" value="테스트"  readonly class="frm_input full_input  readonly" size="10" placeholder="이름">
+	            </li>
+	            	
+	            <li>
+	                <label for="reg_mb_email">E-mail (필수)
+	                
+	                					</label>
+
+	                <input type="hidden" name="old_email" value="wlauswlaus@hanmail.net">
+	                <input type="text" name="mb_email" value="wlauswlaus@hanmail.net" id="reg_mb_email" required class="frm_input email full_input required" size="70" maxlength="100" placeholder="E-mail">
+	            </li>
+	
+	            	
+	            <li>
+	            				</li>
+				<li>
+	            	            </li>
+	
+	            	        </ul>
+	    </div>
+	
+	    <div class="tbl_frm01 tbl_wrap register_form_inner">
+	        <h2>기타 개인설정</h2>
+	        <ul>
+	            	
+	            	
+	            	            <li>
+	                <label for="reg_mb_icon" class="frm_label">
+	                	회원아이콘
+	                	<button type="button" class="tooltip_icon"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span class="sound_only">설명보기</span></button>
+	                	<span class="tooltip">이미지 크기는 가로 22픽셀, 세로 22픽셀 이하로 해주세요.<br>
+gif, jpg, png파일만 가능하며 용량 5,000바이트 이하만 등록됩니다.</span>
+	                </label>
+	                <input type="file" name="mb_icon" id="reg_mb_icon">
+	
+	                	            
+	            </li>
+	            	
+	            	            <li class="reg_mb_img_file">
+	                <label for="reg_mb_img" class="frm_label">
+	                	회원이미지
+	                	<button type="button" class="tooltip_icon"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span class="sound_only">설명보기</span></button>
+	                	<span class="tooltip">이미지 크기는 가로 60픽셀, 세로 60픽셀 이하로 해주세요.<br>
+	                    gif, jpg, png파일만 가능하며 용량 50,000바이트 이하만 등록됩니다.</span>
+	                </label>
+	                <input type="file" name="mb_img" id="reg_mb_img">
+	
+	                	            
+	            </li>
+	            
+	            <li class="chk_box">
+		        	<input type="checkbox" name="mb_mailling" value="1" id="reg_mb_mailling" checked class="selec_chk">
+		            <label for="reg_mb_mailling">
+		            	<span></span>
+		            	<b class="sound_only">메일링서비스</b>
+		            </label>
+		            <span class="chk_li">정보 메일을 받겠습니다.</span>
+		        </li>
+	
+					
+		        		        <li class="chk_box">
+		            <input type="checkbox" name="mb_open" value="1" id="reg_mb_open" checked class="selec_chk">
+		      		<label for="reg_mb_open">
+		      			<span></span>
+		      			<b class="sound_only">정보공개</b>
+		      		</label>      
+		            <span class="chk_li">다른분들이 나의 정보를 볼 수 있도록 합니다.</span>
+		            <button type="button" class="tooltip_icon"><i class="fa fa-question-circle-o" aria-hidden="true"></i><span class="sound_only">설명보기</span></button>
+		            <span class="tooltip">
+		                정보공개를 바꾸시면 앞으로 0일 이내에는 변경이 안됩니다.
+		            </span>
+		            <input type="hidden" name="mb_open_default" value="1"> 
+		        </li>		        
+		        	
+	            	            
+	            	
+	            <li class="is_captcha_use">
+	                자동등록방지
+	                
+<script>var g5_captcha_url  = "http://121.147.125.239/plugin/kcaptcha";</script>
+<script src="http://121.147.125.239/plugin/kcaptcha/kcaptcha.js"></script>
+<fieldset id="captcha" class="captcha">
+<span id="captcha_info">자동등록방지 숫자를 순서대로 입력하세요.</span>
+<legend><label for="captcha_key">자동등록방지</label></legend>
+<div class="cc_img_box"><img src="http://121.147.125.239/plugin/kcaptcha/img/dot.gif" alt="" id="captcha_img"></div><input type="text" name="captcha_key" id="captcha_key" required class="captcha_box required" size="6" maxlength="6">
+<button type="button" id="captcha_mp3"><span></span>숫자음성듣기</button>
+<button type="button" id="captcha_reload"><span></span>새로고침</button>
+</fieldset>	            </li>
+	        </ul>
+	    </div>
+	</div>
+	<div class="btn_confirm">
+	    <a href="http://121.147.125.239" class="btn_close">취소</a>
+	    <button type="submit" id="btn_submit" class="btn_submit" accesskey="s">정보수정</button>
+	</div>
+	</form>
+</div>
+<script>
+$(function() {
+    $("#reg_zip_find").css("display", "inline-block");
+    var pageTypeParam = "pageType=register";
+
+	        });
+
+// submit 최종 폼체크
+function fregisterform_submit(f)
+{
+    // 회원아이디 검사
+    if (f.w.value == "") {
+        var msg = reg_mb_id_check();
+        if (msg) {
+            alert(msg);
+            f.mb_id.select();
+            return false;
+        }
+    }
+
+    if (f.w.value == "") {
+        if (f.mb_password.value.length < 3) {
+            alert("비밀번호를 3글자 이상 입력하십시오.");
+            f.mb_password.focus();
+            return false;
+        }
+    }
+
+    if (f.mb_password.value != f.mb_password_re.value) {
+        alert("비밀번호가 같지 않습니다.");
+        f.mb_password_re.focus();
+        return false;
+    }
+
+    if (f.mb_password.value.length > 0) {
+        if (f.mb_password_re.value.length < 3) {
+            alert("비밀번호를 3글자 이상 입력하십시오.");
+            f.mb_password_re.focus();
+            return false;
+        }
+    }
+
+    // 이름 검사
+    if (f.w.value=="") {
+        if (f.mb_name.value.length < 1) {
+            alert("이름을 입력하십시오.");
+            f.mb_name.focus();
+            return false;
+        }
+
+        /*
+        var pattern = /([^가-힣\x20])/i;
+        if (pattern.test(f.mb_name.value)) {
+            alert("이름은 한글로 입력하십시오.");
+            f.mb_name.select();
+            return false;
+        }
+        */
+    }
+
+    
+    // 닉네임 검사
+    if ((f.w.value == "") || (f.w.value == "u" && f.mb_nick.defaultValue != f.mb_nick.value)) {
+        var msg = reg_mb_nick_check();
+        if (msg) {
+            alert(msg);
+            f.reg_mb_nick.select();
+            return false;
+        }
+    }
+
+    // E-mail 검사
+    if ((f.w.value == "") || (f.w.value == "u" && f.mb_email.defaultValue != f.mb_email.value)) {
+        var msg = reg_mb_email_check();
+        if (msg) {
+            alert(msg);
+            f.reg_mb_email.select();
+            return false;
+        }
+    }
+
+    
+    if (typeof f.mb_icon != "undefined") {
+        if (f.mb_icon.value) {
+            if (!f.mb_icon.value.toLowerCase().match(/.(gif|jpe?g|png)$/i)) {
+                alert("회원아이콘이 이미지 파일이 아닙니다.");
+                f.mb_icon.focus();
+                return false;
+            }
+        }
+    }
+
+    if (typeof f.mb_img != "undefined") {
+        if (f.mb_img.value) {
+            if (!f.mb_img.value.toLowerCase().match(/.(gif|jpe?g|png)$/i)) {
+                alert("회원이미지가 이미지 파일이 아닙니다.");
+                f.mb_img.focus();
+                return false;
+            }
+        }
+    }
+
+    if (typeof(f.mb_recommend) != "undefined" && f.mb_recommend.value) {
+        if (f.mb_id.value == f.mb_recommend.value) {
+            alert("본인을 추천할 수 없습니다.");
+            f.mb_recommend.focus();
+            return false;
+        }
+
+        var msg = reg_mb_recommend_check();
+        if (msg) {
+            alert(msg);
+            f.mb_recommend.select();
+            return false;
+        }
+    }
+
+    if (!chk_captcha()) return false;
+
+    document.getElementById("btn_submit").disabled = "disabled";
+
+    return true;
+}
+
+jQuery(function($){
+	//tooltip
+    $(document).on("click", ".tooltip_icon", function(e){
+        $(this).next(".tooltip").fadeIn(400).css("display","inline-block");
+    }).on("mouseout", ".tooltip_icon", function(e){
+        $(this).next(".tooltip").fadeOut();
+    });
+});
+
+</script>
+
+<!-- } 회원정보 입력/수정 끝 -->
+</div>
+<!-- } 콘텐츠 끝 -->
+
+<footer id="footer">
+            <div class="foot_top">
+                <div class="inner dp_flex">
+                    <div class="foot_l dp_flex">
+                        <a href="#none" class="f_logo">
+                            <img src="/theme/basic/img/flogo_temporarily.png" alt="임동디지털창작소">
+                        </a>
+                        <div class="copy">
+							<ul class="foot_nm ulfl">
+								<li><a href="http://121.147.125.239/bbs/content.php?co_id=privacy">개인정보취급방침</a></li>
+								<li><a href="#none">이메일 무단수집 거부</a></li>
+								<li><a href="#none">저작권정책</a></li>
+							</ul>
+							<div class="copy_info">
+								<p>광주광역시 북구 무등로 68-7. 대표전화 : 062-710-4701</p>
+							</div>
+						</div>
+                    </div>
+                    <div class="foot_r">
+						<div class="related_site p_r">
+							<a class="footlink btn icon_box" href="#none">
+                                <span>관련사이트 바로가기</span>
+                                <span class="ico"><img src="/theme/basic/img/f_relate_arrow.png" alt=""></span>
+                            </a>
+							<ul class="ulfl">
+								<li><a href="#none" target="_blank" title="클릭시 새창열림">광주광역시청</a></li>
+								<li><a href="#none" target="_blank" title="클릭시 새창열림">광주디자인비엔날레</a></li>
+								<li><a href="#none" target="_blank" title="클릭시 새창열림">만들마루</a></li>
+							</ul>
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="foot_bottom">
+				<div class="inner t_a_c copy">Copyright(C) 임동디지털창작소. All rights reserved.</div>
+			</div>
+        </footer>
+    </div>
+    <div class="sns_box">
+        <ul>
+            <li class="sns_01">
+                <a href="#none">
+                    <img src="" alt="인스타그램">
+                </a>
+            </li>
+            <li class="sns_02">
+                <a href="#none">
+                    <img src="" alt="유튜브">
+                </a>
+            </li>
+            <li class="sns_03">
+                <a href="#none">
+                    <img src="" alt="블로그">
+                </a>
+            </li>
+            <li class="sns_04">
+                <a href="#none">
+                    <img src="" alt="페이스북">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="loca_nav">
+        <a href="#header" class="top" title="상단으로">상단으로</a>
+        <a href="#footer" class="bottom" title="하단으로">하단으로</a>
+    </div>
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+
+</body>
+</html>

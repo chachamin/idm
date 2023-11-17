@@ -288,6 +288,31 @@ $(document).ready(function () {
 		$(this).parent().siblings().children("ul").stop().slideUp();
 	});
 
+    // -------------------------- gallery --------------------------
+    $('.view_sd').on('init', function(event, slick) {
+        $(this).siblings('.slick-controls').children('.slick-nav').children('.counter').append('<span class="current"></span> / <span class="totals"></span>');
+        $('.current').text(slick.currentSlide + 1);
+        $('.totals').text(slick.slideCount);
+      })
+      
+      main_visual = $('.view_sd').slick({
+          autoplay: true,
+          dots: false,
+          pauseOnDotsHover: false,
+          pauseOnHover: false,
+          speed: 600,
+          arrows: false,
+          autoplaySpeed: 5000,
+          fade: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          cssEase: 'linear'
+          
+      }).on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+        $('.current').text(nextSlide + 1);
+      });
+
 });
 
 // -------------------------- mGnb close --------------------------
@@ -382,3 +407,28 @@ function noBack(){
     window.history.forward();
 }
 */
+
+$(function(){
+    //자주묻는질문
+        function close_accordion_section() {
+            $('.bo_tit').removeClass('active');
+            $('.bo_cont').stop().slideUp(300);
+        }
+    
+        $('.bo_tit').click(function(e) {
+            // Grab current anchor value
+    
+            if($(this).is('.active')) {
+                close_accordion_section();
+            }else {
+                close_accordion_section();
+    
+                // Add active class to section title
+                $(this).addClass('active');
+                // Open up the hidden content panel
+                $(this).next('.bo_cont').stop().slideDown(300).addClass('open'); 
+            }
+    
+            e.preventDefault();
+        });
+    });

@@ -197,3 +197,37 @@
 #subWrap .sub_h2{padding:46px 0 0;text-align:center;}
 #subWrap .sub_h2 h3 {position:relative;font-size:2.625rem;font-weight:700;}
 
+/* 로그인 */
+.mbskin {width: 100%;height: 100vh;background-color: #f8f8f8;}
+.mbskin_box{display: inline-block;overflow-x: hidden;width: 100%;vertical-align: middle;padding: 100px 0;}
+.mbskin_box .logo_box {display: flex;justify-content: center;}
+.mbskin_box .logo_box .idm_logo  {width: 206px;height: 62px;background: url(../img/logo_temporarily.png) 0 0 no-repeat;}
+.mbskin_box .login_form {width: 600px;margin:35px auto;padding: 55px 90px 50px;box-shadow: 0 14px 28px rgba(0, 0, 0, 0.07), 0 10px 28px rgba(0, 0, 0, 0.07);background-color: #fff;}
+.mbskin_box .login_form .fb1 {text-align: center;font-size: 1.625rem;margin-bottom: 30px;}
+.mbskin_box .login_form .input_box {width: 100%;}
+.mbskin_box .login_form .input_id {margin-bottom: 5px;}
+.mbskin_box .login_form .input_box input {width: 100%;}
+.mbskin_box .login_form .btn_submit {width: 100%;margin-top: 15px;border: 1px solid #e9554c;background: #e9554c;color: #fff;transition: all 0.2s ease 0s;}
+.mbskin_box .login_form .btn_submit:hover {background-color: #c73533  !important;}
+.mbskin_box .login_form .link_box {margin-top: 20px;justify-content: space-between;}
+.mbskin_box .login_form .join_site {margin-top: 40px;padding-top: 20px;position: relative;border-top: 1px solid #ececec;}
+.mbskin_box .login_form .join_site .text_pr {font-size: 0.875rem;padding: 0 7px;background: #fff;position: absolute;top: -8px;left: 50%;transform: translateX(-50%);color: #b0b0b0;}
+.mbskin_box .login_form .join_site .join_btn {width: 100%;padding: 10px;text-align: center;border: 1px solid #787878;border-radius: 4px;}
+.mbskin_box .login_form .join_site .join_btn:hover {box-shadow: 6px 6px 10px 4px rgba(0, 0, 0, 0.04);transition: all 0.2s ease 0s;}
+.mbskin .policy {text-align: center;}
+.mbskin .policy .btn_box {font-size: 0.875rem;}
+.mbskin .policy .btn_box .fb1 {margin-right: 20px;position: relative;}
+.mbskin .policy .btn_box .fb1::after {content: '';display: block;width: 2px;height: 13px;background-color: #888888;position: absolute;top: 1px;right: -13px;transform: rotate(30deg);}
+.mbskin .policy .copy {margin-top: 15px;font-size: 0.875rem;}
+
+/* 아이디/비밀번호 찾기 */
+.new_win .explain {text-align: center;margin-bottom: 20px;}
+.new_win .explain span {position: relative;font-weight:500;}
+.new_win .explain span::after {content: '';display: block;width: 100%;height: 8px;background: rgba(231, 109, 76, 0.2);position: absolute;bottom: -2px;left: 0;}
+.new_win .captcha {display:flex;flex-wrap:wrap;position:relative;margin-top:30px;}
+.new_win .captcha #captcha_info {font-size:0.875rem;margin-bottom:7px;}
+.new_win .captcha .cc_img_box{width:100%;border:1px solid #ddd;border-radius:4px;text-align:center;margin-bottom:3px;}
+.new_win .captcha .captcha_box {width:calc(100% - 96px);}
+.new_win .captcha button {font-size:0;width:45px;}
+.new_win .captcha button#captcha_mp3 {background: url(/theme/basic/img/captcha_sound_ico.png) no-repeat center #F0F0F0;margin:0 3px;}
+.new_win .captcha button#captcha_reload {background: url(/theme/basic/img/captcha_reset_ico.png) no-repeat center #F0F0F0;}
