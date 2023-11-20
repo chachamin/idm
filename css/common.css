@@ -51,16 +51,16 @@ input:read-only{background:#fafafa;color:#111;}
 .radio label{position:relative;display:inline-block;min-height:20px;line-height:1.4;margin:0;padding-left:26px;color:#666;}
 .radio input {position:absolute; width:100%; height:20px; padding:0; opacity:0; border:none; margin:0; z-index:10; background:none; appearance:none; -webkit-appearance:none;cursor:pointer;}
 .radio input[type="radio"] + label:before{content:'';position:absolute;top:0px;left:0;display:inline-block; width:20px; height:20px; margin-right:2px;border:1px solid #333;background:#fff; cursor:pointer;vertical-align:middle;border-radius:50%;border:6px solid #ddd;    box-sizing: border-box;}
-.radio input[type="radio"]:checked + label:before{border:6px solid #1f67e5;}
-.radio input[type="radio"]:focus + label{border:1px dotted #1f67e5}
-.radio input[type="radio"]:checked + label,.chkbox input[type="checkbox"]:checked + label{color:#1f67e5}
+.radio input[type="radio"]:checked + label:before{border:6px solid #e9554c ;}
+.radio input[type="radio"]:focus + label{border:1px dotted #e9554c }
+.radio input[type="radio"]:checked + label,.chkbox input[type="checkbox"]:checked + label{color:#c73533}
 .radio + .radio,.chkbox + .chkbox{margin-left:8px;}
 
 .chkbox{position:relative}
 .chkbox label{position:relative;display:inline-block;min-height:24px;line-height:1.4;margin:0;padding-left:28px;color:#666;cursor:pointer;}
 .chkbox input {position:absolute; width:20px; height:20px; padding:0; opacity:0; border:none; margin:0; z-index:10; background:none; appearance:none; -webkit-appearance:none;}
-.chkbox input[type="checkbox"] + label:before{content:'';position:absolute;top:0px;left:0;display:inline-block; width:20px; height:20px; border:1px solid #ddd;background:url('/_KOR/img/ico_check_gray.png') center center no-repeat #fafafa ;cursor:pointer;border-radius:4px;}
-.chkbox input[type="checkbox"]:checked + label:before {background:url('/_KOR/img/ico_check_w.png') center center no-repeat #1f67e5 ;border-color:transparent}
+.chkbox input[type="checkbox"] + label:before{content:'';position:absolute;top:0px;left:0;display:inline-block; width:20px; height:20px; border:1px solid #ddd;background:url('../img/check_box.png') center center no-repeat #fafafa ;cursor:pointer;border-radius:4px;}
+.chkbox input[type="checkbox"]:checked + label:before {background:url('../img/check_box_w.png') center center no-repeat #c73533 ;border-color:transparent}
 .chkbox input[type="checkbox"]:checked + label{color:#1f67e5 }
 .chkbox input[type="checkbox"]:focus + label{border:1px dotted #666}
 

@@ -113,3 +113,57 @@
 .map_info_box .btn {min-width: 168px;}
 .root_daum_roughmap .wrap_btn_zoom button {height: 30px;}
 .root_daum_roughmap .wrap_btn_zoom .btn_zoom_reset {margin-top: 10px !important;}
+
+/*회원가입 - 동의*/
+.register .reg_step li {padding: 7px 15px;border: 1px solid #ddd;border-radius: 20px;margin-right: 20px;font-size: 0.875rem;position: relative;}
+.register .reg_step li::after {content: '';display: block;width: 20px;height: 1px;background: #ddd;position: absolute;right: -22px;top: 15px;}
+.register .reg_step li:last-child {margin-right: 0;}
+.register .reg_step li:last-child::after {display: none;}
+.register .reg_step li span {font-weight: 500;}
+.register .reg_step li.on {background: #c73533;color: #fff;border: 1px solid #c73533;}
+.register .clause_agree {border: 1px solid #ddd;padding: 40px;width: 800px;margin: 0 auto;border-radius: 20px;}
+.register .clause_agree .chk_all {width: 100%;text-align: center;border: 1px solid #ddd;padding: 15px 0;border-radius: 5px;font-weight: 700;}
+.register .clause_agree .notice {margin-top: 15px;padding-left: 30px;font-size: 0.938rem;position: relative;}
+.register .clause_agree .notice::after {content: '!';display: block;width: 20px;height: 20px;border-radius: 50%;border: 1px solid #ddd;text-align: center;color: #787878;font-size: 0.875rem;line-height: 20px;position: absolute;top: 0;left:0;}
+.clause_agree .fregister_agree span {margin-left: 5px;font-size: 0.875rem;font-weight: 500;}
+#fregister_term {margin-top: 30px;padding-top: 30px;border-top: 1px dashed #ddd;}
+#fregister_term .fregister_agree {margin-bottom: 7px;}
+#fregister_term .clause_detail {width: 100%;padding: 20px;box-sizing: border-box;height: 100px;font-size: 0.875rem;}
+#fregister_private {margin-top: 30px;}
+#fregister_private .fregister_agree {margin-bottom: 7px;}
+#fregister_private table {width: 100%;text-align: center;font-size: 0.875rem;}
+.register .btn_box {margin-top: 30px;}
+.register .btn_box > * {width: 120px;}
+.register .btn_box .btn_close {color: #121212;vertical-align: middle;border: 1px solid #ccc;box-sizing: border-box;height: 45px;border-radius: 4px;line-height: 45px;}
+.register .btn_box .btn_submit {background: #333;border-color: #333;color: #fff;}
+.register .btn_box .btn_submit:hover {background: #000 !important;border-color: #000 !important;}
+
+/*회원가입 - 정보입력*/
+.register .step_tit {align-items: baseline;}
+.register .step_tit .write_notice_basic {font-size: 0.938rem;margin-left: 7px;}
+.register .join_form_box{padding: 20px 0;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.register .join_form_box .form_line {display: flex;justify-content: space-between;}
+.register .join_form_box .form_line .half {width: 48%;margin-bottom: 10px;}
+.register .join_form_box .form_line .input_tit {width: 20%;line-height: 45px;}
+.register .join_form_box .form_line .include_info {width: 80%;}
+.register .join_form_box .form_line .include_info:not(.chkbox) input {width: 100%;}
+.register .join_form_box .form_line .include_info.chkbox {line-height: 45px;}
+
+/*회원가입 - 완료*/
+.register .join_ok {width: 100%;padding: 180px 40px 40px;background: url(../img/join_ok.png) no-repeat center 40px #fafafa;border-radius: 20px;}
+.register .join_ok .reg_result_p {font-size: 1.25rem;padding-bottom: 30px;border-bottom: 1px dashed#ddd;margin-bottom: 20px;text-align: center;}
+.register .join_ok .result_txt {margin-bottom: 7px;font-size: 0.875rem;padding-left: 25px;position: relative;}
+.register .join_ok .result_txt::after {content: '!';display: block;width: 18px;height: 18px;border-radius: 50%;background: #fff;border: 1px solid #ddd;font-size: 0.75rem;text-align: center;line-height: 18px;position: absolute;top: -2px;left: 0;}
+.btn_confirm_reg.t_a_c {margin-top: 20px;}
+
+/*마이페이지 - 비밀번호 확인*/
+.ck_mypg {width: 800px;border: 1px solid #ddd;padding: 40px;border-radius: 20px;margin: 0 auto;}
+.ck_mypg .fb1 {text-align: center;font-size: 1.625rem;margin-bottom: 30px;}
+.ck_mypg .text_box {text-align: center;}
+.ck_mypg .in_box {margin-top: 40px;border-top: 1px dashed #ddd;border-bottom:1px dashed #ddd; padding:20px 0;}
+.ck_mypg .in_box li {width: 300px;margin: 0 auto;margin-bottom: 10px;}
+.ck_mypg .in_box li:last-child{margin-bottom: 0;}
+.ck_mypg .in_box li > div:first-child {margin-right: 10px;width: 30%;}
+.ck_mypg .input_tit {line-height: 45px;}
+.ck_mypg .btn_box {margin-top: 30px;}
+.ck_mypg .btn_box .btn_submit {padding:8px 40px}

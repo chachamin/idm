@@ -2,30 +2,45 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="임동지지털창작소">
-    <meta name="keyword" content="디지털장작소">
-
-    <link rel="shortcut icon" href="/culture/img/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" href="/culture/img/favi.png">
-
-    <link rel="stylesheet" type="text/css" href="css/common.css">
-    <link rel="stylesheet" type="text/css" href="css/layout.css">
-    <link rel="stylesheet" type="text/css" href="css/slick.css">
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/slick.js"></script>
-
-    <title>임동 디지털 창작소 홈페이지</title>
-    <script src="js/main.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="css/board.css">
-    <link rel="stylesheet" type="text/css" href="css/content.css">
-
-    <link rel="stylesheet" type="text/css" href="css/rspnsv.css">
+    <meta charset="utf-8">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>전체검색 결과 | 임동디지털창작소</title>
+    <link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/default.css?ver=2303229">
+    <link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/common.css?ver=2303229">
+    <link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/layout.css?ver=2303229">
+    <link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/slick.css?ver=2303229">
+    <link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/main.css?ver=2303229">
+    <link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/content.css?ver=2303229">
+    <link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/board.css?ver=2303229">
+    <link rel="stylesheet" href="http://121.147.125.239/theme/basic/css/rspnsv.css?ver=2303229">
+    <link rel="stylesheet" href="http://121.147.125.239/skin/search/basic/style.css?ver=2303229">
+    <!--[if lte IE 8]>
+<script src="http://121.147.125.239/js/html5.js"></script>
+<![endif]-->
+    <script>
+        // 자바스크립트에서 사용하는 전역변수 선언
+        var g5_url = "http://121.147.125.239";
+        var g5_bbs_url = "http://121.147.125.239/bbs";
+        var g5_is_member = "1";
+        var g5_is_admin = "super";
+        var g5_is_mobile = "";
+        var g5_bo_table = "";
+        var g5_sca = "";
+        var g5_editor = "";
+        var g5_cookie_domain = "";
+        var g5_theme_shop_url = "http://121.147.125.239/theme/basic/shop";
+        var g5_shop_url = "http://121.147.125.239/shop";
+    </script>
+    <script src="http://121.147.125.239/js/jquery-1.12.4.min.js?ver=2304171"></script>
+    <script src="http://121.147.125.239/js/jquery-migrate-1.4.1.min.js?ver=2304171"></script>
+    <script src="http://121.147.125.239/js/jquery.menu.js?ver=2304171"></script>
+    <script src="http://121.147.125.239/js/common.js?ver=2304171"></script>
+    <script src="http://121.147.125.239/js/wrest.js?ver=2304171"></script>
+    <script src="http://121.147.125.239/js/placeholders.min.js?ver=2304171"></script>
+    <script src="http://121.147.125.239/theme/basic/js/common.js?ver=2304171"></script>
+    <script src="http://121.147.125.239/theme/basic/js/slick.js?ver=2304171"></script>
+    <script src="http://121.147.125.239/theme/basic/js/main.js?ver=2304171"></script>
 </head>
 
 <body>
@@ -291,74 +306,72 @@
                     </div>
                     <div class="sub_content inner">
                         <!-- 전체검색 시작 { -->
-                            <form name="fsearch" onsubmit="return fsearch_submit(this);" method="get">
-                                <input type="hidden" name="srows" value="10">
-                                <div class="board_search clearfix integrate_sh mb40">
-                                    <fieldset id="sch_res_detail" class="dp_flex">
-                                        <legend>상세검색</legend>
-                                        <label for="gr_id" class="sound_only">게시판 그룹선택</label>
-                                        <select name="gr_id" id="gr_id" class="select">
-                                            <option value="">전체 분류
-                                            <option value="community">커뮤니티</option>
-                                        </select>
-                                        <script>
-                                            document.getElementById("gr_id").value = "";
-                                        </script>
+                        <form name="fsearch" onsubmit="return fsearch_submit(this);" method="get">
+                            <input type="hidden" name="srows" value="10">
+                            <fieldset id="sch_res_detail">
+                                <legend>상세검색</legend>
+                                <label for="gr_id" class="sound_only">게시판 그룹선택</label><select name="gr_id" id="gr_id"
+                                    class="select">
+                                    <option value="">전체 분류
+                                    <option value="community">커뮤니티</option>
+                                </select>
+                                <script>
+                                    document.getElementById("gr_id").value = "";
+                                </script>
 
-                                        <label for="sfl" class="sound_only">검색조건</label>
-                                        <select name="sfl" id="sfl">
-                                            <option value="wr_subject||wr_content" selected="selected">제목+내용</option>
-                                            <option value="wr_subject">제목</option>
-                                            <option value="wr_content">내용</option>
-                                        </select>
+                                <label for="sfl" class="sound_only">검색조건</label>
+                                <select name="sfl" id="sfl">
+                                    <option value="wr_subject||wr_content" selected="selected">제목+내용</option>
+                                    <option value="wr_subject">제목</option>
+                                    <option value="wr_content">내용</option>
+                                </select>
 
-                                        <label for="stx" class="sound_only">검색어<strong class="sound_only">
-                                                필수</strong></label>
+                                <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
+                                <span class="sch_wr">
+                                    <input type="text" name="stx" value="테스트" id="stx" required class="frm_input"
+                                        size="40">
+                                    <button type="submit" class="btn_submit"><i class="fa fa-search"
+                                            aria-hidden="true"></i> 검색</button>
+                                </span>
 
-                                        <div class="search_input_wrap">
-                                            <input type="text" name="stx" value="테스트" id="stx" required class="frm_input" size="40">
-                                            <button type="submit" class="btn_search">검색</button>
-                                        </div>
+                                <script>
+                                    function fsearch_submit(f) {
+                                        var stx = f.stx.value.trim();
+                                        if (stx.length < 2) {
+                                            alert("검색어는 두글자 이상 입력하십시오.");
+                                            f.stx.select();
+                                            f.stx.focus();
+                                            return false;
+                                        }
 
-                                        <script>
-                                            function fsearch_submit(f) {
-                                                var stx = f.stx.value.trim();
-                                                if (stx.length < 2) {
-                                                    alert("검색어는 두글자 이상 입력하십시오.");
-                                                    f.stx.select();
-                                                    f.stx.focus();
-                                                    return false;
-                                                }
+                                        // 검색에 많은 부하가 걸리는 경우 이 주석을 제거하세요.
+                                        var cnt = 0;
+                                        for (var i = 0; i < stx.length; i++) {
+                                            if (stx.charAt(i) == ' ')
+                                                cnt++;
+                                        }
 
-                                                // 검색에 많은 부하가 걸리는 경우 이 주석을 제거하세요.
-                                                var cnt = 0;
-                                                for (var i = 0; i < stx.length; i++) {
-                                                    if (stx.charAt(i) == ' ')
-                                                        cnt++;
-                                                }
+                                        if (cnt > 1) {
+                                            alert("빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다.");
+                                            f.stx.select();
+                                            f.stx.focus();
+                                            return false;
+                                        }
+                                        f.stx.value = stx;
 
-                                                if (cnt > 1) {
-                                                    alert("빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다.");
-                                                    f.stx.select();
-                                                    f.stx.focus();
-                                                    return false;
-                                                }
-                                                f.stx.value = stx;
+                                        f.action = "";
+                                        return true;
+                                    }
+                                </script>
 
-                                                f.action = "";
-                                                return true;
-                                            }
-                                        </script>
-
-                                        <!-- <div class="switch_field">
-                                            <input type="radio" value="and" checked id="sop_and" name="sop">
-                                            <label for="sop_and">AND</label>
-                                            <input type="radio" value="or" id="sop_or" name="sop">
-                                            <label for="sop_or">OR</label>
-                                        </div> -->
-                                    </fieldset>
+                                <div class="switch_field">
+                                    <input type="radio" value="and" checked id="sop_and" name="sop">
+                                    <label for="sop_and">AND</label>
+                                    <input type="radio" value="or" id="sop_or" name="sop">
+                                    <label for="sop_or">OR</label>
                                 </div>
-                            </form>
+                            </fieldset>
+                        </form>
 
                         <div id="sch_result">
                             <section id="sch_res_ov">
@@ -386,6 +399,8 @@
                                         href="/bbs/search.php?sfl=wr_subject%7C%7Cwr_content&amp;stx=%ED%85%8C%EC%8A%A4%ED%8A%B8&amp;sop=and&amp;gr_id=&amp;onetable=online"><strong>온라인강의</strong><span
                                             class="cnt_cmt">1</span></a></li>
                             </ul>
+
+                            <hr>
 
                             <section class="sch_res_list">
                                 <div class="search_board_result">
