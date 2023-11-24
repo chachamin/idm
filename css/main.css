@@ -4,7 +4,8 @@
 .slick-nav a{background: url(../img/sd_ir.png) no-repeat;font-size: 0;z-index: 40;}
 
 /* 알림+ 검색 */
-.sec_01 {background: #f9f9f9;}
+.sec_01 {background: #f9f9f9;position: relative;}
+.sec_01::after {content: '';display: block;width: 155px;height: 155px;background: url(../img/main_round_s.jpg) no-repeat;position: absolute;bottom:-155px;left: 0;}
 .sec_01 .con_box {padding: 70px 0 80px;}
 .sec_01 .box_l {width: 60%;}
 .sec_01 .alim_sd a{display:block;border:1px solid #ededed;border-radius:8px;overflow:hidden;}
@@ -22,6 +23,8 @@
 .alim_sd_wrap .alim_sd {height: 450px;border-radius: 20px;overflow: hidden;}
 .sec_01 .box_r {width: 40%;padding: 45px 45px 0 70px;}
 .sec_01 .box_r .in_box {width: 440px;margin: 0 auto;}
+.sec_01 .top_text {position: relative;}
+.sec_01 .top_text::after {content: '';display: block;width: 55px;height: 16px;background: url(../img/main_ir.png) no-repeat -225px -8px;position: absolute;bottom: -34px;left: 50%;transform: translateX(-50%);}
 .sec_01 .top_text > div {font-size: 1.875rem;text-align: center;}
 .sec_01 .top_text .t_1 {color: #585d65;}
 .sec_01 .top_text .t_2 {color: #e9554c;}
@@ -72,7 +75,7 @@
 .sec_02 .promo_list .text_box .date {margin-top: 30px;}
 
 /* 프로그램 */
-.sec_03 .bg_box {background: #fffbf5;padding: 80px 0 90px;}
+.sec_03 .bg_box {background: url(../img/main_pg_bgl.png) no-repeat left -40px bottom -40px, url(../img/main_pg_bgr.png) no-repeat right -32px top -67px #fffbf5;padding: 80px 0 10px;}
 
 .pg_tab_box{position:relative;min-height:580px;}
 .pg_tabs {position:absolute;right:0;top:50px;width:100%;text-align:center;}

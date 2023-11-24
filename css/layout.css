@@ -231,3 +231,11 @@
 .new_win .captcha button {font-size:0;width:45px;}
 .new_win .captcha button#captcha_mp3 {background: url(/theme/basic/img/captcha_sound_ico.png) no-repeat center #F0F0F0;margin:0 3px;}
 .new_win .captcha button#captcha_reload {background: url(/theme/basic/img/captcha_reset_ico.png) no-repeat center #F0F0F0;}
+
+/* 탭메뉴 */
+.sub_dep3 .dep3_tab li{border: 1px solid #ddd;border-right: none;text-align: center;padding: 20px 0;font-weight: 500;color: #858585;}
+.sub_dep3 .dep3_tab li:last-child {border-right: 1px solid #ddd;}
+.sub_dep3 .dep3_tab li.on {background: #f25855;color: #fff;font-weight: 500;border-radius: 7px;position: relative;box-shadow: 0px 2px 13px 0px rgba(4, 0, 0, 0.2)}
+.sub_dep3 .dep3_tab li.on::after {content: '';position: absolute;bottom: -21px;left: calc(50% - 7px);display: block;width: 0;height: 0;border-width: 14px 0px 14px 14px;border-style: solid;border-color: transparent transparent transparent #f25855;transform: rotate(90deg);}
+
+.sub_dep3 .dep3_tab.col2 li {width: 50%;}

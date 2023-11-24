@@ -14,16 +14,17 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/slick.js"></script>
-    
+
     <title>임동 디지털 창작소 홈페이지</title>
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/board.css">
     <link rel="stylesheet" type="text/css" href="css/content.css">
-    
+
     <link rel="stylesheet" type="text/css" href="css/rspnsv.css">
 </head>
 
@@ -193,7 +194,7 @@
                         <div class="snb fl">
                             <ul class="ulfl">
                                 <li class="home"><a href="/culture">
-                                        <p>홈</p>
+                                        <p>홈</p> <span></span>
                                     </a>
                                 </li>
                                 <li class="snb_lev1">
@@ -209,12 +210,12 @@
                                 </li>
                                 <li class="snb_lev1">
                                     <a class="snb_select" href="javascript:void(0);">
-                                        <p>센터소개</p> <span></span>
+                                        <p>공지사항</p> <span></span>
                                     </a>
                                     <ul class="snb_lev2">
-                                        <li class="on"><a href="#none">센터소개</a></li>
+                                        <li><a href="#none">센터소개</a></li>
                                         <li><a href="#none">찾아오시는길</a></li>
-                                        <li><a href="#none">공지사항</a></li>
+                                        <li class="on"><a href="#none">공지사항</a></li>
                                         <li><a href="#none">커뮤니티</a></li>
                                         <li><a href="">Q&A</a></li>
                                     </ul>
@@ -228,20 +229,136 @@
                 </div>
                 <div id="subWrap">
                     <div class="sub_h2">
-                        <h3 class="fb3">센터소개</h3>
+                        <h3 class="fb3">아카이브</h3>
                     </div>
                     <div class="sub_content inner">
-                        <nav id="dep3_inst" class="sub_dep3">
-                            <ul class="dep3_tab dp_flex col2">
-                                <li class="on"><a href="/reservation/facilityInfo.php?pg_id=facility">시설안내</a></li>
-                                <li><a href="/reservation/equipmentInfo.php?pg_id=equipment" id="bo_cate">장비안내</a></li>
-                            </ul>
-                        </nav>
-                        <div class="prepare_wrap">
-                            <div class="img_box"></div>
-                            <div class="heading_5 fb3">페이지 준비중입니다.</div>
-                            <div class="text_box">보다 나은 서비스를 제공하기 위하여 페이지 준비중에 있습니다.<br>빠른 시일 내에 준비하여 찾아 뵙겠습니다.</div>
-
+                        <div class="bogal_list_wp">
+                            <div class="board_search clearfix">
+                                <div class="total fl">전체 <span class="red_d fb3">99</span> 개의 게시물이 있습니다.</div>
+                                <div class="search_form fr">
+                                    <select name="keyField" id="select" title="검색구분 선택" class="">
+                                        <option value="" selected="selected">전체</option>
+                                        <option value="TITLE">제목</option>
+                                        <option value="CONTENT">내용</option>
+                                        <option value="M_NAME">작성자</option>
+                                    </select>
+                                    <div class="search_input_wrap">
+                                        <input class="" type="text" placeholder="검색어를 입력하세요" title="검색할 내용을 입력하세요" name="keyWord" value="">
+                                        <button type="submit" class="btn_search">검색</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bogal_list">
+                                <ul class="col3">
+                                    <li>
+                                        <a href="#none">
+                                            <div class="img_box">
+                                                <div class="in_box">
+                                                    <img>
+                                                    <div class="tag tag1">교육후기</div>
+                                                </div>
+                                            </div>
+                                            <div class="text_box">
+                                                <div class="title">산업디자인 기초 강의</div>
+                                                <ul>
+                                                    <li>
+                                                        <span class="tit">등록일</span>
+                                                        <div class="con">2023-11-03</div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">조회수</span>
+                                                        <div class="con">100</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <div class="img_box">
+                                                <div class="in_box">
+                                                    <img>
+                                                    <div class="tag tag2">행사후기</div>
+                                                </div>
+                                            </div>
+                                            <div class="text_box">
+                                                <div class="title">임동 디지털창작소 개관기념 - 우리가족 머그컵 만들기</div>
+                                                <ul>
+                                                    <li>
+                                                        <span class="tit">등록일</span>
+                                                        <div class="con">2023-11-03</div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">조회수</span>
+                                                        <div class="con">100</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <div class="img_box">
+                                                <div class="in_box">
+                                                    <img>
+                                                    <div class="tag tag1">교육후기</div>
+                                                </div>
+                                            </div>
+                                            <div class="text_box">
+                                                <div class="title">산업디자인 기초 강의</div>
+                                                <ul>
+                                                    <li>
+                                                        <span class="tit">등록일</span>
+                                                        <div class="con">2023-11-03</div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">조회수</span>
+                                                        <div class="con">100</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none">
+                                            <div class="img_box">
+                                                <div class="in_box">
+                                                    <img>
+                                                    <div class="tag tag1">교육후기</div>
+                                                </div>
+                                            </div>
+                                            <div class="text_box">
+                                                <div class="title">산업디자인 기초 강의</div>
+                                                <ul>
+                                                    <li>
+                                                        <span class="tit">등록일</span>
+                                                        <div class="con">2023-11-03</div>
+                                                    </li>
+                                                    <li>
+                                                        <span class="tit">조회수</span>
+                                                        <div class="con">100</div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="btn_box t_a_r">
+                                <a href="#none" class="btn bg_mint round_box">글쓰기</a>
+                            </div>
+                            <div class="pagination">
+                                <ul>
+                                    <li><a href="#none" class="ico first" title="처음페이지"></a></li>
+                                    <li><a href="#none" class="ico prev" title="이전페이지"></a></li>
+                                    <li><a href="javascript:void(0);" class="active">1</a></li>
+                                    <li><a href="javascript:void(0);">2</a></li>
+                                    <li><a href="javascript:void(0);">3</a></li>
+                                    <li><a href="javascript:void(0);">4</a></li>
+                                    <li><a href="#none" class="ico next" title="다음페이지"></a></li>
+                                    <li><a href="#none" class="ico last" title="마지막페이지"></a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

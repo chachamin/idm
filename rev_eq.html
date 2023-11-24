@@ -223,161 +223,194 @@
                             </ul>
                         </div>
                         <div class="snb_unit fr">
-                            <a title="페이지 인쇄" href="#this" onclick="window.print();return false;" class="print">PRINT</a>
+                            <a title="페이지 인쇄" href="#this" onclick="window.print();return false;"
+                                class="print">PRINT</a>
                         </div>
                     </div>
                 </div>
                 <div id="subWrap">
                     <div class="sub_h2">
-                        <h3 class="fb3">교육신청</h3>
+                        <h3 class="fb3">장비예약신청</h3>
                     </div>
                     <div class="sub_content inner">
-                        <div class="bogal_list_wp">
-                            <div class="board_search clearfix">
-                                <div class="total fl">전체 <span class="red_d fb3">99</span> 개의 게시물이 있습니다.</div>
-                                <div class="search_form fr">
-                                    <select name="keyField" id="select" title="검색구분 선택" class="">
-                                        <option value="" selected="selected">전체</option>
-                                        <option value="TITLE">제목</option>
-                                        <option value="CONTENT">내용</option>
-                                        <option value="M_NAME">작성자</option>
-                                    </select>
-                                    <div class="search_input_wrap">
-                                        <input class="" type="text" placeholder="검색어를 입력하세요" title="검색할 내용을 입력하세요" name="keyWord" value="">
-                                        <button type="submit" class="btn_search">검색</button>
+                        <div class="rev_wrap">
+                            <div class="dp_flex">
+                                <div class="rev_cont">
+                                    <div class="resv_type_wrap">
+                                        <div class="heading_6 fb2">장비선택</div>
+                                        <div class="tab_box">
+                                            <ul>
+                                                <li>
+                                                    <a href="#none">디지털 가공장비</a>
+                                                    <div class="type_select">
+                                                        <select name="type_list" id="type_list" title="장비를 선택하세요">
+                                                            <option>장비를 선택하세요</option>
+                                                            <option value="1">CNC 라우터(RXR 2450)</option>
+                                                            <option value="2">레이저컷터(Trotec Q400)</option>
+                                                            <option value="3">레이저컷터(Trotec R400)</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#none">디지털 출력장비</a>
+                                                    <div class="type_select">
+                                                        <select name="type_list" id="type_list" title="장비를 선택하세요">
+                                                            <option>장비를 선택하세요</option>
+                                                            <option value="1">CNC 라우터(RXR 2450)</option>
+                                                            <option value="2">레이저컷터(Trotec Q400)</option>
+                                                            <option value="3">레이저컷터(Trotec R400)</option>
+                                                            <option value="4">3D 프린터(dp101)</option>
+                                                            <option value="5">라텍스출력기(Latex 365)</option>
+                                                            <option value="6">평판 컷팅 플로터(CE-9000-140)</option>
+                                                            <option value="7">평판 UV 프린터(ARTJET 6090)</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#none">프린팅</a>
+                                                    <div class="type_select">
+                                                        <select name="type_list" id="type_list" title="장비를 선택하세요">
+                                                            <option>장비를 선택하세요</option>
+                                                            <option value="1">CNC 라우터(RXR 2450)</option>
+                                                            <option value="2">레이저컷터(Trotec Q400)</option>
+                                                            <option value="3">레이저컷터(Trotec R400)</option>
+                                                            <option value="4">3D 프린터(dp101)</option>
+                                                            <option value="5">라텍스출력기(Latex 365)</option>
+                                                            <option value="6">평판 컷팅 플로터(CE-9000-140)</option>
+                                                            <option value="7">평판 UV 프린터(ARTJET 6090)</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#none">목공장비</a>
+                                                    <div class="type_select">
+                                                        <select name="type_list" id="type_list" title="장비를 선택하세요">
+                                                            <option>장비를 선택하세요</option>
+                                                            <option value="1">CNC 라우터(RXR 2450)</option>
+                                                            <option value="2">레이저컷터(Trotec Q400)</option>
+                                                            <option value="3">레이저컷터(Trotec R400)</option>
+                                                            <option value="4">3D 프린터(dp101)</option>
+                                                            <option value="5">라텍스출력기(Latex 365)</option>
+                                                            <option value="6">평판 컷팅 플로터(CE-9000-140)</option>
+                                                            <option value="7">평판 UV 프린터(ARTJET 6090)</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <a href="#none">기타</a>
+                                                    <div class="type_select">
+                                                        <select name="type_list" id="type_list" title="장비를 선택하세요">
+                                                            <option>장비를 선택하세요</option>
+                                                            <option value="1">CNC 라우터(RXR 2450)</option>
+                                                            <option value="2">레이저컷터(Trotec Q400)</option>
+                                                            <option value="3">레이저컷터(Trotec R400)</option>
+                                                            <option value="4">3D 프린터(dp101)</option>
+                                                            <option value="5">라텍스출력기(Latex 365)</option>
+                                                            <option value="6">평판 컷팅 플로터(CE-9000-140)</option>
+                                                            <option value="7">평판 UV 프린터(ARTJET 6090)</option>
+                                                        </select>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="cla_wrap">
+                                        <div class="heading_6 fb2">예약일 선택</div>
+                                        <div class="cla_box">
+                                            <div class="cal_slect_area">
+                                                <div class="now_month">2023년 11월</div>
+                                                <div class="btn_box">
+                                                    <a href="#none">이전달</a>
+                                                    <a href="#none">다음달</a>
+                                                </div>
+                                                <div class="rev_cal_wrap">
+                                                    <table class="rev_cal_table">
+                                                        <caption>예약현황 달력</caption>
+
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="sun">일</th>
+                                                                <th>월</th>
+                                                                <th>화</th>
+                                                                <th>수</th>
+                                                                <th>목</th>
+                                                                <th>금</th>
+                                                                <th class="sat">토</th>
+                                                            </tr>
+                                                        </thead>
+
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td>
+                                                                    <span class="date">1</span>
+                                                                    <div class="state_box">
+                                                                        <span class="bg_disable">예약불가</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="date">2</span>
+                                                                    <div class="state_box">
+                                                                        <span class="bg_disable">예약불가</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="date">2</span>
+                                                                    <div class="state_box">
+                                                                        <span class="bg_disable">예약가능</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td>
+                                                                    <span class="date">2</span>
+                                                                    <div class="state_box">
+                                                                        <span class="bg_disable">휴관일</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="bogal_list">
-                                <ul class="col4 pg_list">
-                                    <li>
-                                        <div class="img_box">
-                                            <div class="in_box">
-                                                <img>
-                                                <div class="tag_box dp_flex">
-                                                    <div class="lable">초급메이커</div>
-                                                    <div class="prog tag_y">접수중</div>
+                                <div class="box_action">
+                                    <div class="rev_info">
+                                        <div class="st_01">
+                                            <div class="fb2">1. 예약신청 장비</div>
+                                            <div class="roundbox">CNC 라우터(RXR 2450)</div>
+                                        </div>
+                                        <div class="st_02">
+                                            <div class="fb2">2. 예약일 선택</div>
+                                            <div class="roundbox">
+                                                <div class="label">예약일</div>
+                                                <div class="date" id="setDay">2023년 11월 24일</div>
+                                            </div>
+                                        </div>
+                                        <div class="st_03">
+                                            <div class="fb2">3. 예약시간 선택</div>
+                                            <div class="time_option">
+                                                <div class="dp_flex">
+                                                    <div class="select_box">
+                                                        <select name="time_list" id="time_list" title="시간을 선택하세요.">
+                                                            <option>시간을 선택하세요</option>
+                                                            <option value="table01">09:00 ~ 10:00</option>
+                                                            <option value="table02">10:00 ~ 11:00</option>
+                                                            <option value="table03">11:00 ~ 12:00</option>
+                                                            <option value="table04">13:00 ~ 14:00</option>
+                                                            <option value="table05">14:00 ~ 15:00</option>
+                                                            <option value="table06">15:00 ~ 16:00</option>
+                                                            <option value="table07">16:00 ~ 17:00</option>
+                                                            <option value="table09">17:00 ~ 18:00</option>
+                                                        </select>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="text_box">
-                                            <div class="title">산업디자인 기초 강의</div>
-                                            <ul>
-                                                <li>
-                                                    <span class="tit">모집기간</span>
-                                                    <div class="con">2023.11.24 ~ 2023.11.30</div>
-                                                </li>
-                                                <li>
-                                                    <span class="tit">모집/신청</span>
-                                                    <div class="con">15명 / <span class="red_d fb3">5</span>명</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn_box">
-                                            <a href="#none" class="btn_app btn">신청하기</a>
-                                            <a href="#none" class="btn_more btn">상세보기</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="img_box">
-                                            <div class="in_box">
-                                                <img>
-                                                <div class="tag_box dp_flex">
-                                                    <div class="lable">초급메이커</div>
-                                                    <div class="prog tag_y">접수중</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="text_box">
-                                            <div class="title">산업디자인 기초 강의</div>
-                                            <ul>
-                                                <li>
-                                                    <span class="tit">모집기간</span>
-                                                    <div class="con">2023.11.24 ~ 2023.11.30</div>
-                                                </li>
-                                                <li>
-                                                    <span class="tit">모집/신청</span>
-                                                    <div class="con">15명 / <span class="red_d fb3">5</span>명</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn_box">
-                                            <a href="#none" class="btn_app btn">신청하기</a>
-                                            <a href="#none" class="btn_more btn">상세보기</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="img_box">
-                                            <div class="in_box">
-                                                <img>
-                                                <div class="tag_box dp_flex">
-                                                    <div class="lable">전문메이커</div>
-                                                    <div class="prog tag_r">접수대기</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="text_box">
-                                            <div class="title">산업디자인 기초 강의</div>
-                                            <ul>
-                                                <li>
-                                                    <span class="tit">모집기간</span>
-                                                    <div class="con">2023.11.24 ~ 2023.11.30</div>
-                                                </li>
-                                                <li>
-                                                    <span class="tit">모집/신청</span>
-                                                    <div class="con">15명 / <span class="red_d fb3">5</span>명</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn_box">
-                                            <a href="#none" class="btn_app btn">신청하기</a>
-                                            <a href="#none" class="btn_more btn">상세보기</a>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="img_box">
-                                            <div class="in_box">
-                                                <img>
-                                                <div class="tag_box dp_flex">
-                                                    <div class="lable">중급메이커</div>
-                                                    <div class="prog tag_e">접수마감</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="text_box">
-                                            <div class="title">산업디자인 기초 강의</div>
-                                            <ul>
-                                                <li>
-                                                    <span class="tit">모집기간</span>
-                                                    <div class="con">2023.11.24 ~ 2023.11.30</div>
-                                                </li>
-                                                <li>
-                                                    <span class="tit">모집/신청</span>
-                                                    <div class="con">15명 / <span class="red_d fb3">5</span>명</div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="btn_box">
-                                            <a href="#none" class="btn_app btn">신청하기</a>
-                                            <a href="#none" class="btn_more btn">상세보기</a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="btn_box t_a_r">
-                                <a href="#none" class="btn bg_dblue round_box">글쓰기</a>
-                            </div>
-                            <div class="pagination">
-                                <ul>
-                                    <li><a href="#none" class="ico first" title="처음페이지"></a></li>
-                                    <li><a href="#none" class="ico prev" title="이전페이지"></a></li>
-                                    <li><a href="javascript:void(0);" class="active">1</a></li>
-                                    <li><a href="javascript:void(0);">2</a></li>
-                                    <li><a href="javascript:void(0);">3</a></li>
-                                    <li><a href="javascript:void(0);">4</a></li>
-                                    <li><a href="#none" class="ico next" title="다음페이지"></a></li>
-                                    <li><a href="#none" class="ico last" title="마지막페이지"></a></li>
-                                </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

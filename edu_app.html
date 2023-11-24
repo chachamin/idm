@@ -14,16 +14,17 @@
     <link rel="stylesheet" type="text/css" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
-    
+
     <script src="js/jquery.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/slick.js"></script>
-    
+
     <title>임동 디지털 창작소 홈페이지</title>
     <script src="js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/board.css">
     <link rel="stylesheet" type="text/css" href="css/content.css">
-    
+
     <link rel="stylesheet" type="text/css" href="css/rspnsv.css">
 </head>
 
@@ -209,12 +210,12 @@
                                 </li>
                                 <li class="snb_lev1">
                                     <a class="snb_select" href="javascript:void(0);">
-                                        <p>센터소개</p> <span></span>
+                                        <p>공지사항</p> <span></span>
                                     </a>
                                     <ul class="snb_lev2">
-                                        <li class="on"><a href="#none">센터소개</a></li>
+                                        <li><a href="#none">센터소개</a></li>
                                         <li><a href="#none">찾아오시는길</a></li>
-                                        <li><a href="#none">공지사항</a></li>
+                                        <li class="on"><a href="#none">공지사항</a></li>
                                         <li><a href="#none">커뮤니티</a></li>
                                         <li><a href="">Q&A</a></li>
                                     </ul>
@@ -222,26 +223,100 @@
                             </ul>
                         </div>
                         <div class="snb_unit fr">
-                            <a title="페이지 인쇄" href="#this" onclick="window.print();return false;" class="print">PRINT</a>
+                            <a title="페이지 인쇄" href="#this" onclick="window.print();return false;"
+                                class="print">PRINT</a>
                         </div>
                     </div>
                 </div>
                 <div id="subWrap">
                     <div class="sub_h2">
-                        <h3 class="fb3">센터소개</h3>
+                        <h3 class="fb3">교육신청</h3>
                     </div>
                     <div class="sub_content inner">
-                        <nav id="dep3_inst" class="sub_dep3">
-                            <ul class="dep3_tab dp_flex col2">
-                                <li class="on"><a href="/reservation/facilityInfo.php?pg_id=facility">시설안내</a></li>
-                                <li><a href="/reservation/equipmentInfo.php?pg_id=equipment" id="bo_cate">장비안내</a></li>
-                            </ul>
-                        </nav>
-                        <div class="prepare_wrap">
-                            <div class="img_box"></div>
-                            <div class="heading_5 fb3">페이지 준비중입니다.</div>
-                            <div class="text_box">보다 나은 서비스를 제공하기 위하여 페이지 준비중에 있습니다.<br>빠른 시일 내에 준비하여 찾아 뵙겠습니다.</div>
-
+                        <div class="app_wrap">
+                            <div class="basic_info mb44">
+                                <div class="heading_6 fb2">교육정보</div>
+                                <div class="info_box">
+                                    <table class="basic_tb bo_w_table">
+                                        <caption>교육정보 안내 테이블</caption>
+                                        <colgroup>
+                                            <col width="15%">
+                                            <col width="35%">
+                                            <col width="15%">
+                                            <col width="35%">
+                                        </colgroup>
+                                        <tr>
+                                            <th>교육명</th>
+                                            <td colspan="3">산업디자인 실무 강의</td>
+                                        </tr>
+                                        <tr>
+                                            <th>교육기간</th>
+                                            <td>2023.12.01 ~ 2023.12.22</td>
+                                            <th>교육장소</th>
+                                            <td>3D프린터실</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수강료</th>
+                                            <td>유료(1만원)</td>
+                                            <th>문의사항</th>
+                                            <td>062-000-0000</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="app_info">
+                                <div class="dp_flex tit_line">
+                                    <div class="heading_6 fb2">신청자 정보입력</div>
+                                    <div class="write_notice_basic t_a_r">
+                                        (<span class="required">필수</span> 표시 항목은 필수 입력 항목입니다.)
+                                    </div>
+                                </div>
+                                <div class="bo_write">
+                                    <table class="basic_tb bo_w_table app_form">
+                                        <caption>신청자 정보입력 테이블</caption>
+                                        <colgroup>
+                                            <col width="15%">
+                                            <col width="20%">
+                                            <col width="15%">
+                                            <col width="15%">
+                                            <col width="15%">
+                                            <col width="20%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>이름<span class="required">필수</span></th>
+                                                <td>
+                                                    <input type="text" name="name" id="name" title="이름" placeholder="이름 입력" onclick="nameCheck('real');" class="w100p">
+                                                </td>
+                                                <th>성별<span class="required">필수</span></th>
+                                                <td>
+                                                    <span class="radio"><input type="radio" name="gender" value="M" id="male"><label for="male">남성</label></span>
+                                                    <span class="radio"><input type="radio" name="gender" value="F" id="female"><label for="female">여성</label></span>
+                                                </td>
+                                                <th>연락처<span class="required">필수</span></th>
+                                                <td colspan="3">
+                                                    <input type="text" name="phone" placeholder="예) 01012345378" onkeyup="characterCheck(this)" onkeydown="characterCheck(this)" class="w100p">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>주소<span class="required">필수</span></th>
+                                                <td colspan="5" class="address">
+                                                    <div>
+                                                        <input type="text" id="userZip" name="zipcode" onclick="addrIns()" readonly  placeholder="우편번호 자동입력" title="우편번호 자동입력" >&nbsp;&nbsp;
+                                                        <input type="text" id="userAddr1" name="addr1"  value="" onclick="addrIns()"  readonly placeholder="주소 자동입력" title="주소 자동입력" class="w40p">
+                                                        <button type="button" onclick="addrIns()" class="bg_dgray"> 주소찾기</button>
+                                                    </div>
+                                                    <div class="add_attach"><input type="text" id="userAddr2" name="addr2" class="mt8" placeholder="상세주소 입력" title="상세주소 입력" ></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="btn_box t_a_c">
+                                    <a href="#none" class="btn bg_dblue round_box">수강신청</a>
+                                    <a href="#none" class="btn bg_w_bo round_box">목록</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

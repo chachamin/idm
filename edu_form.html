@@ -263,23 +263,33 @@
                                             </td>
                                         </tr>
                                         <tr>
+                                            <th>교육시간<span class="required">필수</span></th>
+                                            <td>
+                                                <input type="text" name="edutime" id="edutime" class="w100p" maxlength="10" title="교육시간을 입력하세요" value="" placeholder="교육시간을 입력하세요.">
+                                            </td>
+                                            <th>교육장소<span class="required">필수</span></th>
+                                            <td>
+                                                <input type="text" name="eduplace" id="eduplace" class="w100p" title="교육장소를 입력하세요" value="">
+                                            </td>
+                                        </tr>
+                                        <tr>
                                             <th>모집대상<span class="required">필수</span></th>
                                             <td>
-                                                <input type="text" name="subject" id="subject" maxlength="10" title="모집대상을 입력하세요" value="" style="width:100%">
+                                                <input type="text" name="subject" id="subject"class="w100p" maxlength="10" title="모집대상을 입력하세요" value="">
                                             </td>
                                             <th>모집정원<span class="required">필수</span></th>
                                             <td>
-                                                <input type="text" name="capacity" id="capacity" title="모집정원을 입력하세요" value="">
+                                                <input type="text" name="capacity" id="capacity" class="w100p" title="모집정원을 입력하세요" value="">
                                             </td>
                                         </tr>
                                         <tr>
                                             <th>수강료<span class="required">필수</span></th>
                                             <td>
-                                                <input type="text" name="edu_etc2" id="edu_etc2" title="수강료를 입력하세요" value="">
+                                                <input type="text" name="edu_etc2" id="edu_etc2" class="w100p" title="수강료를 입력하세요" value="">
                                             </td>
                                             <th>문의</th>
                                             <td>
-                                                <input type="text" title="전화번호 입력" name="app_org_tel" id="app_org_tel" placeholder="전화번호 입력" class="w100p" value="">
+                                                <input type="text" title="전화번호 입력" name="app_org_tel" id="app_org_tel" placeholder="문의처를 입력하세요" class="w100p" value="">
                                             </td>
                                         </tr>
                                         <tr>
@@ -292,7 +302,7 @@
                                             <th>첨부</th>
                                             <td colspan="3">
                                                 <p class="mB5"><input type="file" title="파일등록" name="filename0" id="filename0" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,hwpx');" /></p>
-                                                <p class="c_tip_c red mt5">*첫번재 파일은 홈페이지 목록에 표시되는 이미지입니다.</p>
+                                                <p class="c_tip_c red mt5">*첫번째 파일은 홈페이지 목록에 표시되는 이미지입니다.</p>
                                                 <p class="mB5"><input type="file" title="파일등록" name="filename3" id="filename3" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,hwpx');" /></p>
                                                 <p class="mB5"><input type="file" title="파일등록" name="filename4" id="filename4" onchange="reviewUploadImg(this, this.name, 'jpg,gif,hwp,xls,hwpx');" /></p>
                                                 <p class="caution">* jpg,gif,hwp,xls,hwpx 파일만 가능합니다. 용량제한 50MB</p>
