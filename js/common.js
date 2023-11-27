@@ -313,6 +313,24 @@ $(document).ready(function () {
         $('.current').text(nextSlide + 1);
       });
 
+
+    //예약
+	$('.ret_tabs > li > a.tab_link').on('focus click', function () {
+		$(this).addClass('active');
+		$(this).parent('li').siblings('li').find('a').removeClass('active');
+		$(this).parent('li').find('div').css('display', 'block');
+		$(this).parent('li').siblings('li').find('div').css('display', 'none');
+		$(this).parent('li').find('a.more').css('display', 'block');
+		$(this).parent('li').siblings('li').find('a.more').css('display', 'none');
+	});
+
+});
+
+//예약시간선택
+$(function(){
+	$('.pick_t').on('click', function(e){
+        $(this).toggleClass('choice');
+    });
 });
 
 // -------------------------- mGnb close --------------------------
