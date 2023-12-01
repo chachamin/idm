@@ -314,7 +314,7 @@ $(document).ready(function () {
       });
 
 
-    //예약
+    //장비예약
 	$('.ret_tabs > li > a.tab_link').on('focus click', function () {
 		$(this).addClass('active');
 		$(this).parent('li').siblings('li').find('a').removeClass('active');
@@ -322,6 +322,18 @@ $(document).ready(function () {
 		$(this).parent('li').siblings('li').find('div').css('display', 'none');
 		$(this).parent('li').find('a.more').css('display', 'block');
 		$(this).parent('li').siblings('li').find('a.more').css('display', 'none');
+	});
+
+    //공간예약 - 유형선택
+	$('.pick_sp').on('click', function () {
+		$(this).addClass('active');
+        $(this).parent('li').siblings('li').find('a').removeClass('active');
+	});
+
+    //공간예약 - 소속선택
+    $('.pick_ut').on('click', function () {
+		$(this).addClass('active');
+        $(this).parent('li').siblings('li').find('a').removeClass('active');
 	});
 
 });
@@ -332,6 +344,33 @@ $(function(){
         $(this).toggleClass('choice');
     });
 });
+
+//시설안내
+$(function(){
+		function close_accordion_section() {
+			$('.floor_tit').removeClass('active');
+			$('.floor_con').stop().slideUp(500);
+		}
+	
+		$('.floor_tit').click(function(e) {
+			// Grab current anchor value
+	
+			if($(this).is('.active')) {
+				close_accordion_section();
+			}else {
+				close_accordion_section();
+	
+				// Add active class to section title
+				$(this).addClass('active');
+				// Open up the hidden content panel
+				$(this).next('.floor_con').stop().slideDown(500).addClass('open'); 
+			}
+	
+			e.preventDefault();
+		});
+	});
+
+    
 
 // -------------------------- mGnb close --------------------------
 function mGnbClose() {
@@ -450,3 +489,47 @@ $(function(){
             e.preventDefault();
         });
     });
+
+
+    //마이페이지 등급표
+    function layerPop(cont){
+		$('#lvPop').html('');
+		var tg = $('#'+ cont)
+		var popCont = tg.html();
+		$('#lvPop').html(popCont);
+
+		popCenter();
+		$('#lvPop').show();
+
+		$(window).resize(function () {
+			popCenter();
+		})
+	}
+
+	function popCenter() {
+		var width = $('#lvPop').width();
+		var height = $('#lvPop').height();
+
+		$('#lvPop').css({
+			'left' : ($(window).width() - width) / 2,
+			'top' : ($(window).height() - height) / 2
+		})
+	}
+
+	function noteClose() {
+		$('#lvPop').hide();
+	}
+
+	function showCont() {
+		if($(this).hasClass('open')){
+			$('#lvPop .hideCont').hide();
+			$(this).removeClass('open');
+		} else{
+			$('#lvPop .hideCont').show();
+			$(this).addClass('open');
+
+			$('#lvPop').css({
+				'top' : '20%'
+			})
+		}
+	}

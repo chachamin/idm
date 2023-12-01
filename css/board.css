@@ -271,3 +271,22 @@ span.required:before{content:'＊';position:absolute;top:-6px;left:0;width:14px;
 .eq_con_wp .boview_con .con_box .box_gray ul li {padding-left:10px;margin-bottom: 7px;position: relative;}
 .eq_con_wp .boview_con .con_box .box_gray ul li::after {content: '';display: block;width: 5px;height: 5px;border-radius: 50%;background: #9c9c9c;position: absolute;top: 7px;left: 0;}
 .eq_con_wp .boview_con .con_box .box_gray ul li:last-child{margin-bottom: 0;}
+
+/* 시설안내 리스트 */
+.bogal_list .sp_list.col2 > li {width: calc((100% - 64px) / 2);}
+.bogal_list .sp_list > li {display: flex;padding: 10px;}
+.bogal_list .sp_list > li .img_box{width:250px;}
+.bogal_list .sp_list > li .img_box .in_box {height: 230px;}
+.bogal_list .sp_list > li .text_box {width: calc(100% - 270px);margin-left: 20px;}
+.bogal_list .sp_list > li .text_box .title {min-height: inherit;}
+.bogal_list .sp_list > li .text_box ul {display:block;}
+.bogal_list .sp_list > li .text_box ul li {position: relative;padding-left: 12px;margin: 4px 4px;font-size: .875rem;}
+.bogal_list .sp_list > li .text_box ul li:after {content: '';position: absolute;left: 0;top: 5px;width: 4px;height: 4px;background: #999;border-radius: 50%;}
+.bogal_list .sp_list > li .text_box .btn_box {display: flex;justify-content: space-between;}
+.bogal_list .sp_list > li .text_box .btn_box a {width: calc(50% - 6px);margin-top: 30px;}
+.bogal_list .sp_list > li .text_box .btn_box a.btn_rev {background: #E2E6E8;}
+.bogal_list .sp_list > li .text_box .btn_box a.btn_more {border: 1px solid #ddd;}
+.bogal_list_wp.top_br {border-top: 10px solid #f8f8f8;padding-top: 30px;}
+
+/* 시설안내 뷰 */
+.eq_view_wrap.sp_view .eq_view_top .view_sd .item {height: 250px;width: 100%;text-align: center;}
