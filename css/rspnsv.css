@@ -9,6 +9,10 @@
 	#gnb .gnb_r {right: 1.25rem;}
 	#footer .inner .foot_top{padding-left:20px;}
 	.loca_nav{right:24px;bottom:24px;}
+
+	/* 센터소개*/
+	.vision_wrap .box_02 .in_con span::before {height:9px;top: -6px;}
+	.vision_wrap .box_02 .in_con span::after {height:9px;bottom: -6px;}
 }
 
 @media (max-width: 1280px){
@@ -26,15 +30,24 @@
 	#header {height: 80px;}
 
 	/*서브 */
-	#sub{padding-top:80px;}
+	/* #sub{padding-top:80px;}
 	#sub #snb .snb_lev1 > a > p{margin-right:8px;min-width:auto;}
 	.sec_leftbox .tit_box{width:140px;}
-	.sec_leftbox .con_box{width:calc(100% - 140px);}
+	.sec_leftbox .con_box{width:calc(100% - 140px);} */
 
 	/* 메인 */
 	.sec_01 .box_r {padding:0 45px 0 70px;}
 	.alim_sd_wrap .alim_sd {height:auto;}
 
+	/* 센터소개 */
+	.idm_intro .intro_wrap .left_box .img_box {left: 0;}
+
+	/* 장비예약 */
+	.rev_wrap .dp_flex {flex-wrap: wrap;}
+	.rev_wrap .rev_cont {width: 100%;}
+	.box_action {width: 100%;margin-top: 40px;}
+	.box_action .rev_info {position: relative;width: 100%;}
+	.rev_info .st_03 .time ul li {width: 20%;}
 }
 
 @media (max-width: 1024px){
@@ -59,6 +72,19 @@
 	.site_map {padding:0 40px;}
 	.site_map > li{width:calc((100% - 60px) / 3);margin:10px;}
 
+	/* 센터소개 */
+	.idm_intro .intro_wrap .inner {flex-wrap: wrap;}
+	.idm_intro .intro_wrap .left_box {width: 100%;}
+	.idm_intro .intro_wrap .left_box .img_box {position: relative;}
+	.idm_intro .intro_wrap .left_box .attach {left: 0;}
+	.idm_intro .intro_wrap:before {display: none;}
+	.idm_intro .intro_wrap .right_box {width: 100%;margin-left: 0;padding-left: 0;margin-top: 50px;}
+	.vision_wrap .box_03 .in_con > li {width: calc(25% - 8px);}
+	.vision_wrap .box_03 .in_con > li .t_ico {padding: 20px;}
+
+	/* 공간 리스트 */
+	.bogal_list .sp_list.col2 > li {width:100%;}
+
 }
 
 @media (max-width: 960px){
@@ -81,6 +107,23 @@
 	.bogal_list > ul > li{width:calc((100% - 32px) /2);margin:8px;}
 	.board_view .sd_wp{padding:30px 0 10px;background:#fafafa;}
 	.board_view .view_sd {width:90%;}
+
+	/*교육 뷰*/
+	.pg_view .pg_t_con {flex-wrap: wrap;}
+	.pg_view .pg_t_con .box_l {width: 100%;}
+	.pg_tcont .l_box .no_img {min-height: 180px;}
+	.pg_view .pg_t_con .box_r {width: 100%;padding: 0;margin-left: 0;margin-top: 20px;}
+
+	/* 회원가입 */
+	.register .clause_agree {width: 90%;}
+
+	/* 마이페이지 */
+	.my_info_wrap {flex-wrap: wrap;}
+	.my_info_wrap .user_info {width: 100%;padding: 32px;margin-bottom: 20px;margin-right: 0;}
+	.my_info_wrap .total_box {width: 100%;}
+
+	/* 예약확인 */
+	.myres_box .info_list > li {width: 100%;}
 
 
 }
@@ -105,6 +148,27 @@
 	.reco_tour .top_box .trv_course_s li{width:calc((100% - 96px) /3);}
 	.reco_tour .top_box,.trv_course_wp{padding:48px 24px;}
 
+	/* 센터소개 */
+	.vision_wrap .box_03 .in_con {flex-wrap: wrap;}
+	.vision_wrap .box_03 .in_con > li {width: 48%;margin-bottom: 20px;}
+	.pro_sum li {width: 100%;}
+
+	/*교육신청*/
+	.app_end .in_box {width: 100%;}
+
+	/* 장비 뷰 */
+	.eq_view_wrap .eq_view_top .in_box {flex-wrap: wrap;}
+	.eq_view_wrap .eq_view_top .in_box > * {width: 100% !important;}
+	.view_con .sd_wrap .item img {width: 100%;object-fit: cover;}
+	.eq_view_wrap .eq_view_top {padding: 15px;}
+
+	/* 공간 리스트 */
+	.bogal_list .sp_list > li {flex-wrap: wrap;}
+	.bogal_list > ul > li a {width: 100%;}
+	.bogal_list .sp_list > li .img_box {width: 100%;}
+	.bogal_list .sp_list > li .img_box  img {width: 100%;height: auto;object-fit: cover;}
+	.bogal_list .sp_list > li .text_box {width: 100%;margin-left: 0;}
+	.bogal_list .sp_list.col2 > li {width:100%;}
 
 }
 
@@ -121,49 +185,11 @@
 	.basic_tb thead th,.basic_tb tbody td, .basic_tb tbody th{padding:8px;}
 
 	.manager_wrap .inner{padding:16px;}
-
-	/* 서브 */
-	.land8 .bg_box{padding:32px 24px;}
-	.side_sd_wp .side_sd a{margin:0 4px;}
-	.ladn8_list li{width:calc((100% - 64px) /2);}
-
-	/* 특산물 */
-	.speci_food .sec01{padding:40px 24px}
-	.speci_food .sec01 .img_list.f_col_4 li{width:calc((100% - 32px) /2);height:160px;}
-	.speci_food .sec02 .con_box{background-image:none;}
-
-	/* 관광안내 */
-	.tour_call .sec02 .con_box > div{width:100%}
-	.tour_call .sec02 .con_box > div:first-child{margin-bottom:16px;}
-	.tour_call .sec03 ul,.trv_course_wp .trv_course > li .in_box{flex-wrap:wrap;}
-	.tour_call .sec03 li{width:100%}
-
-	.land8_down .qutoe{padding:32px 16px;display:block;}
-	.land8_down .img_box{padding:0;}
-
-	.tour_help .t_line_box,.tour_food .t_line_box{padding:48px 24px;padding-bottom:200px;background-position:center bottom;background-size:contain;}
-	.tour_help .t_line_box .subtitle_2,.tour_food .t_line_box .subtitle_2{width:100%;}
-	.tour_food .t_line_box{padding-bottom:280px;}
-	.reco_tour .top_box .trv_course_s li{width:100%;}
 	
 	.sec_leftbox,.traffic .t_line_box ul {flex-wrap:wrap;}
-	.traffic .t_line_box li{width:50%;border-top:1px solid #ddd;}
 	.sec_leftbox .tit_box,
 	.sec_leftbox .con_box{width:100%;padding-left:0;}
 	.sec_leftbox .tit_box .heading_3{margin-bottom:32px;}
-
-	/* 축제 */
-	.festiv_list > ul > li,.tour_bus .sec_leftbox .info_list,.tour_bus .course_list ul,.tour_bus .t_line_box{flex-wrap:wrap;}
-	.festiv_list > ul > li .img_box{width:100%;}
-	.festiv_list > ul > li .text_box{margin-top:16px;width:100%;padding-left:0;}
-	
-	.tour_bus .t_line_box{padding:48px 24px;}
-	.tour_bus .t_line_box .l_box{width:100%;padding-right:0;margin-bottom:24px;}
-	.tour_bus .sec_leftbox .info_list li,.tour_bus .course_list ul li{width:calc(100% / 2);}
-	.tour_bus .sec_leftbox .info_list li{border-bottom:1px solid #eee;}
-
-	.site_map {padding:0 16px;}
-	.site_map > li{width:calc((100% - 40px) / 2);margin:10px;}
 
 	/* 게시판 */
 	.bogal_list_wrap .btn_box{margin-top:20px;}
@@ -195,27 +221,39 @@
 	.bo_table tbody td.cate,
 	.bo_table tbody td.subject{width:100%;}
 	.bo_table tbody td.subject{font-size:1rem;font-weight:700;}
-	.bo_table .notice_tr{background:#f7fff8;border:1px solid #a2d5a8;}
+	.bo_table .notice_tr{background:rgb(255, 253, 253);border:1px solid #e9554c;}
 	.cate span{padding:6px 8px;font-size:.875rem;min-width:auto;}
 
-	/*이색여행코스 230712*/
-	.exotic_tour .top_box .in_box {flex-wrap: wrap;}
-	.exotic_tour .in_box .img_box {width: 100%;margin-right: 0;margin-bottom: 10px;}
-	.exotic_tour .in_box .cont_box {width: 100%;}
-	.exotic_tour .in_box .cont_box .course {flex-wrap: wrap;}
-	.exotic_tour .cont_box .course ul {padding-left: 25px;margin-top: 7px;}
 
-	/* 팝업 230712*/
-	#pop .popup_list_wp{width:100%;}
-	#pop .popup_list_wp .pop_img a{height:auto;}
-	#pop .popup_unit_bottom .btn{margin-left:2px;}
-	#pop .popup_list_wp .slick-nav a.slick-stop, #pop .popup_list_wp .slick-nav a.slick-play{bottom:8px}
-	#pop .popup_list_wp .slick-nav a.slick-next {right: -43px;}
-	#pop .popup_list_wp .slick-nav a.slick-prev {left:-43px;}
+	/*센터소개*/
+	.idm_intro .intro_wrap {padding-bottom: 0;}
 
+	/*오시는길*/
+	.map_wrap .map_info_box {position: relative;left: 0;width: 90%;margin: 0 auto;margin-top: -100px;box-shadow: 6px 8px 12px 2px rgb(0, 0, 0, .1);}
+	.map_info_box .in_box{padding:24px 0 24px;}
+	.map_info_box .btn{width:100%;margin:0;margin-bottom:4px;}
+	.root_daum_roughmap{height:400px;}
+
+	/* 비밀번호확인 */
+	.ck_mypg {width: 90%;}
+
+	/* 동영상 강의 */
+	.board_view_body .video_box {padding: 0;height: auto;width: 100%;}
 }
 
 @media (max-width: 560px){
+
+	/*기본*/
+	.heading_1{font-size:2.5rem;line-height:3.25rem;} /* 40px */
+	.heading_2{font-size:2.25rem;line-height:2.925rem;}/* 36px */
+	.heading_3{font-size:2rem;line-height:2.6rem;}/* 32px */
+	.heading_4{font-size:1.75rem;line-height:2.275rem;}/* 28px */
+	.heading_5{font-size:1.5rem;line-height:1.95rem;}/* 24px */
+
+	.heading_6{font-size:1.25rem;line-height:1.75rem;}/* 20px */
+	.subtitle_1{font-size:1.125rem;line-height:1.688rem;}/* 18px */
+	.subtitle_2{font-size:1rem;line-height:1.5rem;}/* 18px */
+
 
 	/* 메인 */
 	.main_v_sd .text_box{padding:160px 1.25rem 0;}
@@ -223,6 +261,37 @@
 	.main_v_sd .text_box .q_link {width:80%;display:flex;margin:40px auto 0;flex-wrap:wrap;}
 	.main_v_sd .text_box .q_link li{width:calc((100% - 32px) / 2);margin:8px;}
 	.main_v_sd .text_box .q_link li a{width:auto;}
+
+
+	/*서브*/
+	#snb > .inner  {padding-left: 0;padding-right: 0;}
+	#snb .snb > ul > li:not(:first-child) {min-width: 150px;}
+	#snb .snb_lev1 > a {padding: 0px 5px;}
+	#snb .snb_unit a {margin-right: 20px;}
+
+	/*센터소개*/
+	.idm_intro .intro_wrap .left_box .img_box {width: 100%;height: auto;}
+	.idm_intro .intro_wrap .left_box .img_box img {width: 100%;height: 100%;object-fit: cover;}
+	.vision_wrap .box_03 .in_con > li {width: 100%;}
+
+	/*비밀번호찾기*/
+	.mbskin_box .login_form {width: 90%;}
+
+	/* 공간리스트 */
+	.noitce_box.sp_rev {flex-wrap: wrap;}
+
+	/* 예약확인 */
+	.myres_box .info_list > li {width: 100%;flex-wrap: wrap;}
+	.myres_box .info_list > li .tit {width: 100%;margin-bottom: 10px;}
+	.myres_box .info_list > li .cont {width: 100%;}
+
+	/* 장비예약 */
+	.time_ck_box ul li {width: calc(50% - 6px);}
+	.time_ck_box ul li:nth-child(4n) {margin-right: 6px;}
+	.rev_info .st_03 .time ul li {width:33%;}
+	.resv_type_wrap .ret_tabs .type_select {top: 100px;}
+	.cal_slect_area {padding: 24px 0;}
+
 }
 
 
@@ -231,8 +300,16 @@
 	.board_view .sd_wp .view_sd .item{height:240px;}
 	.bogal_list > ul > li .img_box .in_box{height:230px;}
 
-	/* 팝업 230712*/
-	#pop .pop_title .font_g {font-size: 2em;}
+	/*교육신청*/
+	.app_end .in_box {padding: 150px 16px 40px}
+
+	/*비밀번호찾기*/
+	.mbskin_box .login_form {padding: 40px 20px 40px;}
+
+	/* 마이페이지 */
+	.my_pg .sub_dep3 {overflow-x: scroll;}
+	.my_pg .sub_dep3 ul {width: 200%;}
+	
 }
 
 @media (max-width: 475px){
@@ -244,14 +321,48 @@
 @media (max-width: 425px){
 	.sub_content .heading_6.mo_pab {padding-bottom:50px;}
 	.food_notice {top:37px;left:0;width:100%;}
+
+	/* 예약확인 */
+	.myres_box .res_num {flex-wrap: wrap;}
+	.myres_box .res_num > div {width: 100%;text-align: center;}
+
+	/* 비밀번호확인 */
+	.ck_mypg {padding: 40px 20px;}
+	.ck_mypg .in_box li {flex-wrap: wrap;}
+	.ck_mypg .in_box li > div:first-child {width: 100%;margin-bottom: 10px;}
+	.ck_mypg .in_box li > div:last-child {width: 100%;}
 	
+
+	/* 장비예약 */
+	.rev_info .st_02 .roundbox .label {position: relative;margin-bottom: 20px;}
+	.rev_info .st_02 .roundbox .date {text-align: center;}
+	.rev_info .st_03 .time ul li {width: 100%;margin-right: 0;}
+	.rev_info .st_03 .time ul li::after {display: none;}
 }
 
 @media (max-width: 375px){
-	#sub #snb .snb_lev1.font_s_ex p {font-size:13px;}
-	#sub #snb .snb_lev1 .snb_lev2.wid_ex li {font-size:13px;}
+	/* 서브*/
+	#snb{overflow-x: scroll;}
+	#snb .inner {width: 130%;}
 
-	/* 팝업 230712*/
-	#pop .popup_list_wp .slick-nav a.slick-stop, #pop .popup_list_wp .slick-nav a.slick-play {bottom: 7px;left: -2px;}
+	/* 센터소개*/
+	.vision_wrap .box_04 .in_con {flex-wrap: wrap;}
+	.vision_wrap .box_04 .in_con li {width: 100%;padding: 10px;border-bottom: 1px dashed #ddd;}
+	.vision_wrap .box_04 .in_con li::after {display: none;}
+	.vision_wrap .box_04 .in_con li:last-child {border-bottom: none;}
+
+	/* 마이페이지 */
+	.my_info_wrap .user_info {padding: 5px;}
+	
+
+}
+
+@media (max-width: 320px){
+	/* 서브*/
+	#snb{overflow-x: scroll;}
+	#snb .inner {width: 130%;}
+
+	/* 공간 리스트*/
+	.floor_box .floor_tit a {min-width: 100%;}
 }
 	
