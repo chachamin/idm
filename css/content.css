@@ -138,6 +138,7 @@
 .register .btn_box .btn_submit {background: #333;border-color: #333;color: #fff;}
 .register .btn_box .btn_submit:hover {background: #000 !important;border-color: #000 !important;}
 
+
 /*회원가입 - 정보입력*/
 .register .step_tit {align-items: baseline;}
 .register .step_tit .write_notice_basic {font-size: 0.938rem;margin-left: 7px;}
@@ -148,6 +149,7 @@
 .register .join_form_box .form_line .include_info {width: 80%;}
 .register .join_form_box .form_line .include_info:not(.chkbox) input {width: 100%;}
 .register .join_form_box .form_line .include_info.chkbox {line-height: 45px;}
+.register .btn_box .btn_drop {color: #121212;vertical-align: middle;box-sizing: border-box;height: 45px;border-radius: 4px;line-height: 45px;}
 
 /*회원가입 - 완료*/
 .register .join_ok {width: 100%;padding: 180px 40px 40px;background: url(../img/join_ok.png) no-repeat center 40px #fafafa;border-radius: 20px;}
@@ -157,7 +159,8 @@
 .btn_confirm_reg.t_a_c {margin-top: 20px;}
 
 /*마이페이지 - 비밀번호 확인*/
-.ck_mypg {width: 800px;border: 1px solid #ddd;padding: 40px;border-radius: 20px;margin: 0 auto;}
+.log_bg {background: url(../img/iogin_bg.png) no-repeat center;}
+.ck_mypg {width: 600px;border: 1px solid #ddd;padding: 40px;border-radius: 20px;margin: 0 auto;background: #fff;}
 .ck_mypg .fb1 {text-align: center;font-size: 1.625rem;margin-bottom: 30px;}
 .ck_mypg .text_box {text-align: center;}
 .ck_mypg .in_box {margin-top: 40px;border-top: 1px dashed #ddd;border-bottom:1px dashed #ddd; padding:20px 0;}
@@ -166,7 +169,8 @@
 .ck_mypg .in_box li > div:first-child {margin-right: 10px;width: 30%;}
 .ck_mypg .input_tit {line-height: 45px;}
 .ck_mypg .btn_box {margin-top: 30px;}
-.ck_mypg .btn_box .btn_submit {padding:8px 40px}
+.ck_mypg .btn_box .btn_submit {padding:8px 40px;transition: all .3s;}
+.ck_mypg .btn_box .btn_submit:hover {background: #e9554c;color: #fff;}
 
 /*페이지 준비중*/
 .prepare_wrap {width: 100%;padding: 80px 0;text-align: center;border-radius: 20px;background: #fafafa;}

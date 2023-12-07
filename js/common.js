@@ -340,7 +340,7 @@ $(document).ready(function () {
 
 //예약시간선택
 $(function(){
-	$('.pick_t').on('click', function(e){
+	$('#dbtime > li > a').on('click', function(e){
         $(this).toggleClass('choice');
     });
 });
