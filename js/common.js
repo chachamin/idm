@@ -127,20 +127,20 @@ $(document).ready(function () {
     $('.main_wp').addClass('header_ov');
 
     $(".gnb_dep1").mouseenter(function () {
-        $(".gnb_dep2").stop().animate({ height: 280 }, 300);
-        $(".tmnBg").stop().animate({ height: 280 }, 300);
+        $(".gnb_dep2").stop().animate({ height: 200 }, 300);
+        $(".tmnBg").stop().animate({ height: 200 }, 300).addClass("on");
         $('.main_wp').removeClass('header_ov');
 
     }).mouseleave(function () {
         $(".gnb_dep2").stop().animate({ height: 0 }, 300);
-        $(".tmnBg").stop().animate({ height: 0 }, 300);
+        $(".tmnBg").stop().animate({ height: 0 }, 300).removeClass("on");
         $('.main_wp').addClass('header_ov');
     });
 
     /*gnb tabkey focusin/focusout*/
     $(".gnb_dep1 > li").focusin(function () {
-        $(".gnb_dep2").stop().animate({ height: 280 }, 300);
-        $(".tmnBg").stop().animate({ height: 280 }, 300);
+        $(".gnb_dep2").stop().animate({ height: 200 }, 300);
+        $(".tmnBg").stop().animate({ height: 200 }, 300);
     }).focusout(function () {
         $(".gnb_dep2").stop().animate({ height: 0 }, 300);
         $(".tmnBg").stop().animate({ height: 0 }, 300);

@@ -108,6 +108,11 @@
 	.board_view .sd_wp{padding:30px 0 10px;background:#fafafa;}
 	.board_view .view_sd {width:90%;}
 
+	.bo_write table colgroup col {width:100%;}
+	.bo_write table tr {display: flex;flex-wrap: wrap;text-align: left;align-items: center;border-bottom:1px solid #ddd;border: 1px solid #ddd;margin-bottom:4px;}
+   	.bo_write table th {display: block;border: 0;padding: 10px 4px;text-align: left;width: 100%;border-bottom: 1px solid #ddd;text-align:center;}
+	.bo_write table td {display: block;border: 0;padding: 16px 10px;text-align: left;width: 100%;}
+
 	/*교육 뷰*/
 	.pg_view .pg_t_con {flex-wrap: wrap;}
 	.pg_view .pg_t_con .box_l {width: 100%;}
@@ -223,6 +228,11 @@
 	.bo_table tbody td.subject{font-size:1rem;font-weight:700;}
 	.bo_table .notice_tr{background:rgb(255, 253, 253);border:1px solid #e9554c;}
 	.cate span{padding:6px 8px;font-size:.875rem;min-width:auto;}
+
+	.info_box .bo_w_table colgroup col {width:100%;}
+	.info_box .bo_w_table tr {display: flex;flex-wrap: wrap;text-align: left;align-items: center;border-bottom:1px solid #ddd;border: 1px solid #ddd;margin-bottom:4px;}
+    .info_box .bo_w_table th {display: block;border: 0;padding: 10px 4px;text-align: left;width: 100%;border-bottom: 1px solid #ddd;text-align:center;}
+	.info_box .bo_w_table td {display: block;border: 0;padding: 16px 10px;text-align: left;width: 100%;}
 
 
 	/*센터소개*/

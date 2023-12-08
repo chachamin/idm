@@ -51,6 +51,12 @@
 #gnb .inner > ul > li:nth-child(4) .gnb_dep2{left:calc(67% + 25px);}
 #gnb .gnb_dep2 li:first-child {padding-top: 20px;}
 #gnb .tmnBg{position:absolute;top:100px;left:0;width:100%;height:0;background: #fff;z-index:100;}
+#gnb .tmnBg.on{border-bottom:1px solid #ddd;box-shadow: 6px 8px 10px 2px rgba(0, 0, 0, 0.1);}
+#gnb .tmnBg.on:before,#gnb .tmnBg.on .gnb_2dep_deco{display:block;}
+#gnb .gnb_2dep_deco{display:none;height:200px;padding:20px 0 32px 12px;width:20%;position:relative;background: url(../img/gnb_bg.png) no-repeat right bottom;}
+#gnb .gnb_2dep_deco .title{position:relative;font-weight:600;font-size:1.5rem;}
+#gnb .gnb_2dep_deco .title:before{content:'';position:absolute;top:2px;left:-12px;width:4px;height:24px;border-radius:4px;background:#c73533;}
+#gnb .gnb_2dep_deco .desc{padding-top:18px;color:#666;line-height:1.5rem;}
 
 #gnb .gnb_r{position:absolute;top:30px;right:0;box-sizing:border-box;}
 #gnb .gnb_r ul{display:flex;}
